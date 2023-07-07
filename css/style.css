@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-seriff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: none;
+    border-bottom: 2px solid white;
+    width:800px;
+    height:auto;
+    align-content: center;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.logo img {
+    height:120px;
+    margin-bottom: 20px;
+    }
+
+.indice ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 41%;
+
+}
+
+.indice ul li {
+    display: block;
+    float: left;
+    padding-left: 15px;
+}
+
+body{
+    background: #000;
+    background-image: url(../img/fondo.png);
+    align-content: center;
+    text-align:center;   
+}
+
+#caja {
+    background-color: #000;
+}
+
+body .enlaces {
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+}
+
+.index-blog{
+    width:800px;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.index-blog h2{
+    color:white;
+    text-align: left;
+}
+
+.index-games {
+    width:800px;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.index-callisto-thumbnail img{
+    width: 120px;
+    margin: 20px;
+    box-shadow: 3px 3px 10px gray;
+    border-radius:10px;
+}
+
+.index-forspoken-thumbnail img{
+    max-width:120px;
+    margin:20px;
+    box-shadow: 3px 3px 10px gray;
+    border-radius:10px;
+}
+
+.index-hifi-thumbnail img{
+    max-width: 120px;
+    margin: 20px;
+    box-shadow: 3px 3px 10px gray;
+    border-radius:10px;
+}
+
+.index-deadspace-thumbnail img{
+    max-width: 120px;
+    margin: 20px;
+    box-shadow: 3px 3px 10px gray;
+    border-radius:10px;
+}
+
+.index-miembros {
+    width:800px;
+    height: auto;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.index-contacto{
+    width:800px;
+    height: auto;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.blog {
+    width:800px;
+    height: auto;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.juegos {
+    width:800px;
+    height: auto;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.juegos .juegos-callisto {
+    padding-bottom: 20px;
+    border-bottom:2px solid white;
+}
+
+.juegos .juegos-callisto img {
+    width: 300px;
+}
+
+.juegos .juegos-forspoken {
+    padding: 20px;
+    border-bottom:2px solid white;
+}
+
+.juegos .juegos-forspoken img {
+    width:300px;
+}
+
+.juegos .juegos-hifi {
+    padding: 20px;
+    border-bottom:2px solid white;
+}
+
+.juegos .juegos-hifi img {
+    width: 300px;
+}
+
+.juegos .juegos-deadspace{
+    padding-top: 20px;
+}
+
+.juegos .juegos-deadspace img{
+    width:300px;
+}
+
+.miembros {
+    width:800px;
+    height: auto;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+.miembros .miembros-eufm{
+    padding-bottom: 20px;
+    border-bottom:2px solid white;
+}
+
+.miembros .miembros-dougan{
+    padding: 20px;
+    border-bottom:2px solid white;
+}
+
+.miembros .miembros-migli0 {
+    padding-top: 20px;
+}
+
+.contacto {
+    width:800px;
+    height: auto;
+    border:4px solid white;
+    padding: 20px 20px;
+    margin: 50px auto;
+}
+
+footer {
+    width:800px;
+    height: auto;
+    background-color: none;
+    border-top: 2px solid white;
+    margin: 5px auto;
+}
+
+footer img{
+    margin-top:15px;
+}
+
+footer .footer-enlaces{
+    margin-bottom:20px;
+}
