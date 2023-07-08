@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-seriff;
+    font-family: 'Montserrat', sans-seriff;
 }
 
 a {
@@ -11,35 +11,43 @@ a {
 }
 
 header {
-    background-color: none;
-    border-bottom: 2px solid white;
-    width:800px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: rgb(11, 7, 63);
+    border-bottom: 1px solid rgb(93, 88, 188);
+    width:70%;
     height:auto;
     align-content: center;
-    padding: 20px;
-    margin: 50px auto;
+    padding: 30px;
+    margin: auto auto;
 }
-
 .logo img {
-    height:120px;
-    margin-bottom: 20px;
+    min-height:70px;
+    height:70px;
     }
 
 .indice ul {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: bottom center;
     list-style: none;
     text-decoration: none;
     margin: 0px auto;
-    width: 41%;
-
 }
-
-.indice ul li {
-    display: block;
-    float: left;
+    
+.indice > ul > li {
+    justify-items:bottom center;
+    line-height: 30px;
+    border-right: 1px solid gray;
     padding-left: 15px;
 }
 
+.enlaces {
+    margin-top: 20px;
+}
+
 body{
+    display:grid;
     background: #000;
     background-image: url(../img/fondo.png);
     align-content: center;
@@ -48,10 +56,11 @@ body{
 
 #caja {
     background-color: #000;
+    width: 70%;
 }
 
 body .enlaces {
-    padding: 20px;
+    padding: 5px;
 }
 
 h1{
@@ -66,15 +75,23 @@ p {
 }
 
 .index-blog{
-    width:800px;
     border:4px solid white;
     padding: 20px 20px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .index-blog h2{
+    color: white;
+    text-align: left;
+}
+
+.index-blog h3{
     color:white;
     text-align: left;
+}
+
+.index-blog p{
+    margin:20px none;
 }
 
 .index-games {
