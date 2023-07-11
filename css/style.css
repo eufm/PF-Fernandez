@@ -10,7 +10,19 @@ a {
     text-decoration: none;
 }
 
-header {
+#website-areas{
+    grid-template-areas:
+    "header header"
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+}
+
+#website-areas header {
+    grid-area: header;
     display: grid;
     grid-template-columns: 25% 75%;
     background-color: rgb(11, 7, 63);

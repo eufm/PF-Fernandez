@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#grid-layout{
+    display:grid;
+    grid-template-areas:
+    "cabecera cabecera"
+    "contenido contenido"
+    "pie pie";
+}
+
+header{
+    background-color: aqua;
+    grid-area: cabecera;
+    display:grid;
+    grid-template-columns: 25% 75%;
+}
+
+.index-logo-top{
+    background-color: lightseagreen;
+}
+
+.index-menu{
+    background-color: lightgray;
+}
+
+main{
+    background-color: yellow;
+    grid-area: contenido;
+    display: grid;
+    grid-template-rows: repeat (5, 1fr);
+    grid-gap: 10px;
+    width: 900px;
+}
+
+.index-enlaces{
+    background-color:lightcoral;
+}
+
+.index-blog{
+    background-color: lightblue;
+}
+
+.index-juegos{
+    background-color: lightgreen;
+}
+
+.index-miembros{
+    background-color: lightpink;
+}
+
+.index-contacto{
+    background-color: lightsalmon;
+}
+
+footer{
+    background-color: purple;
+    grid-area: pie;
+}
