@@ -11,61 +11,101 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="grid-layout">
-        <!--Encabezado-->
-        <header>
-            <!--Logo-->
-            <div class="index-logo-top">
-                <a><img src="" alt="logo"></a>
-                <p>logo</p>
-            </div>
-            <!--Navegación-->
-            <nav class="index-menu">
-				<ul>
-					<li><a href="./index.html" target="_self"> Inicio </a></li>
-					<li><a href="./pages/esp_blog.html" target="_self">Blog</a></li>
-					<li><a href="./pages/esp_juegos.html" target="_self">Juegos</a></li>
-					<li><a href="./pages/esp_miembros.html" target="_self" >Miembros</a></li>
-					<li><a href="./pages/esp_contacto.html" target="_self">Contacto</a></li>
-				</ul>
-			</nav>
-        </header>
+    <!--Encabezado-->
+    <header>
+        <!--Logo-->
+        <div class="header-logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <!--Navegación-->
+        <nav class="header-menu">
+			<ul>
+				<li class="index-menu-blog"><a href=".pages/esp_blog.html" target="_self">Blog</a></li>
+				<li class="index-menu-juegos"><a href="./pages/esp_juegos.html" target="_self">Juegos</a></li>
+				<li class="index-menu-miembros"><a href="./pages/esp_miembros.html" target="_self" >Miembros</a></li>
+				<li class="index-menu-contacto"><a href="./pages/esp_contacto.html" target="_self">Contacto</a></li>
+			</ul>
+		</nav>
+    </header>
 
-        <!--Contenido-->
-        <main>
-            <!--Enlaces-->
-            <section class="index-enlaces">
-                <h1> Enlaces</h1>
-                <p>Enlaces</p>
-            </section>
+    <!--Contenido-->
+    <main id="index-contenido">
+        <!--Enlaces-->
+        <section class="index-enlaces">
+            <div class="index-IG-TT-Tw">
+                <a href="https://www.instagram.com/singleplayerbyeufm/" target="_blank">	<img src="./img/iglogo.png" alt="IG Logo" width="25px"> @singleplayerbyeufm</a>
+                <a href="https://www.tiktok.com/@singleplayerbyeufm" target="_blank">	<img src="./img/tiktoklogo.png" alt="IG Logo" width="25px"> @singleplayerbyeufm</a>
+                <a href="https://www.twitch.tv/eu_fm_" target="_blank">	<img src="./img/twitchlogo.png" alt="IG Logo" width="25px"> twitch.com/eu_fm_</a>
+            </div>			
+    
+            <div class="index-YT-Sp">
+                <a href="https://www.youtube.com/channel/UCcnociiY6dCU0vArXFobC1g" target="_blank"> <img src="./img/ytlogo.png" alt="IG Logo" width="25px"> Single Player by EuFM</a>
+                <a href="https://open.spotify.com/show/01YspW26eXbQIC2mSFy6Pj?si=c7882d9de974449a" target="_blank">	<img src="./img/spotifylogo.png" alt="IG Logo" width="25px"> Single Player by EuFM</a>
+            </div>
+        </section>
                     
-            <!--Blog-->
-            <section class="index-blog">
+        <!--Blog-->
+        <section class="index-blog">
+            <div class=index-blog-contenido>
                 <h2> Blog</h2>
-                <p>Blog</p>
-            </section>
+                    <h3>¡Abrimos página web!</h3>
+                    <p>¡Hola a todos! Esta e sla primera entrada del blog de nuestra recien creada página web "Single Player by EuFM". La página todavía está en construcción, pero iremos mejorándolo a medida que pasen las semanas. ¡Gracias por su paciencia!</p>
+            </div>
+        </section>
             
-            <!--Juegos-->
-            <section class="index-juegos">
-                <h2>Juegos</h2>
-                <p>Juegos</p>
-            </section>
-            <!--Miembros-->
-            <section class="index-miembros">
-                <h2>Miembros</h2>
-                <p>Miembros</p>
-            </section>
-            <!--Contacto-->
-            <section class="index-contacto">
-                <h2>Contacto</h2>
-                <p>Contacto</p>
-            </section>
-        </main>
-        <!--Pie de página-->
-        <footer>
-            <h3>Footer</h3>
-            <p>Footer</p>
-        </footer>
-    </div>
+        <!--Juegos-->
+        <section class="index-juegos">
+            
+            <div>
+            <a class="index-callisto-thumbnail" href="..." target="_self"> <img src="./img/callisto-thumb.jpg" alt="Callisto Protocol"></a>
+            </div>
+
+			<div>
+            <a class="index-forspoken-thumbnail" href="..." target="_self">	<img src="./img/forspoken-thumb.jpg" alt="Forspoken"></a>
+            </div>
+
+            <div>
+			<a class="index-hifi-thumbnail" href="..." target="_self"> <img src="./img/hifi-thumb.jpg" alt="HiFi Rush"></a>
+            </div>
+
+            <div>
+			<a class="index-deadspace-thumbnail" href="..." target="_self">	<img src="./img/deadspace-thumb.jpg" alt="Dead Space"></a>
+            </div>
+        </section>
+
+        <!--Miembros-->
+        <section class="index-miembros">
+            <h2>Miembros</h2>
+            <div class="index-miembros-eufm">
+                <a target="_self"> <img src="./img/eufm.png" alt="EuFM imagen" width="300px"> </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus molestiae pariatur perspiciatis ex vero quas voluptatum temporibus. Voluptas aliquid sit commodi laboriosam perferendis blanditiis id placeat illo neque enim.</p>
+            </div>
+        </section>
+
+        <!--Contacto-->
+        <section class="index-contacto">
+            <h2>Contacto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus molestiae pariatur perspiciatis ex vero quas voluptatum temporibus. Voluptas aliquid sit commodi laboriosam perferendis blanditiis id placeat illo neque enim.</p>
+        </section>
+    </main>
+        
+    <!--Pie de página-->
+    <footer>
+        <div class="footer-logo">
+            <a> <img src="./img/LOGO.png" alt="logo"></a>
+        </div>
+    
+        <div class="footer-enlaces">
+            <a href="https://www.instagram.com/singleplayerbyeufm/" target="_blank"> <img src="./img/iglogo.png" alt="IG Logo"></a>
+    
+            <a href="https://www.tiktok.com/@singleplayerbyeufm" target="_blank"> <img src="./img/tiktoklogo.png" alt="IG Logo"></a>
+    
+            <a href="https://www.youtube.com/channel/UCcnociiY6dCU0vArXFobC1g" target="_blank">	<img src="./img/ytlogo.png" alt="IG Logo"></a>
+                    
+            <a href="https://www.twitch.tv/eu_fm_" target="_blank">	<img src="./img/twitchlogo.png" alt="IG Logo"></a>
+                    
+            <a href="https://open.spotify.com/show/01YspW26eXbQIC2mSFy6Pj?si=c7882d9de974449a" target="_blank">	<img src="./img/spotifylogo.png" alt="IG Logo"></a>
+        </div>
+    </footer>
 </body>
 </html>
