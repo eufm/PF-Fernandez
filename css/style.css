@@ -1,255 +1,209 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    padding:0;
+    border:0;
+    margin:0;
     font-family: 'Montserrat', sans-seriff;
-}
 
-a {
-    color: white;
-    text-decoration: none;
 }
-
-#website-areas{
-    grid-template-areas:
-    "header header"
-    ""
-    ""
-    ""
-    ""
-    ""
-    ""
-}
-
-#website-areas header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    background-color: rgb(11, 7, 63);
-    border-bottom: 1px solid rgb(93, 88, 188);
-    width:70%;
-    height:auto;
-    align-content: center;
-    padding: 30px;
-    margin: auto auto;
-}
-.logo img {
-    min-height:70px;
-    height:70px;
-    }
-
-.indice ul {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-items: bottom center;
-    list-style: none;
-    text-decoration: none;
-    margin: 0px auto;
-}
-    
-.indice > ul > li {
-    justify-items:bottom center;
-    line-height: 30px;
-    border-right: 1px solid gray;
-    padding-left: 15px;
-}
-
-.enlaces {
-    margin-top: 20px;
-}
-
-body{
+/*index*/
+#index-grid-layout {
     display:grid;
-    background: #000;
-    background-image: url(../img/fondo.png);
-    align-content: center;
-    text-align:center;   
+    grid-template-areas:
+        "cabecera"
+        "contenido"
+        "pie";
 }
 
-#caja {
-    background-color: #000;
-    width: 70%;
+/*cabecera*/
+header {
+    grid-area: "cabecera";
+    display:grid;
+    grid-template-columns: 25% 75%;
+    background-image: url("../img/fondo.png");
 }
 
-body .enlaces {
-    padding: 5px;
+.header-logo {
+    text-align: end;
+    padding-top:50px;
+    padding-bottom:25px;
+    padding-right:25px;
 }
 
-h1{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    margin-bottom: 20px;
+.header-logo img{
+    width: 150px;
 }
 
-p {
-    color: white;
+.header-menu ul{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 4fr;
+    list-style: none;
+    text-align: center;
+    padding-top: 100px;
 }
 
-.index-blog{
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 30px auto;
-}
-
-.index-blog h2{
-    color: white;
-    text-align: left;
-}
-
-.index-blog h3{
+.header-menu ul a{
     color:white;
-    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.index-blog p{
-    margin:20px none;
+/*main*/
+main {
+    grid-area:contenido;
+    display:grid;
+    grid-template-areas:
+        "aside1 enlaces aside2"
+        "aside1 blog aside2"
+        "aside1 juegos aside2"
+        "aside1 miembros aside2"
+        "aside1 contacto aside2";
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
 }
 
-.index-games {
-    width:800px;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
+/*index-aside1*/
+.index-aside1 {
+    grid-area: aside1;
+    /*background-color: lightgreen;*/
 }
 
-.index-callisto-thumbnail img{
+/*index-enlaces*/
+.index-enlaces{
+    grid-area: enlaces;
+    background-color:rgb(8, 13, 63);
+    display: grid;
+    /*grid-template-columns:1fr 8fr 1fr;*/
+    grid-template-rows:1fr 1fr;
+}
+
+.index-enlaces1 {
+    text-align: center;
+    padding-top:25px;
+    padding-bottom:10px;
+}
+
+.index-enlaces2 {
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:25px;
+}
+
+.index-enlaces a{
+    color:white;
+    text-decoration: none;
+}
+
+/*index-blog*/
+.index-blog {
+    grid-area: blog;
+    background-color: rgb(1, 1, 34);
+    color: white;
+    display:grid;
+    grid-template-columns:1fr 8fr;
+    padding:25px;
+}
+
+.index-blog-content1 {
+    padding-right: 50px;
+    text-align: justify;
+}
+
+/*index-juegos*/
+.index-juegos{
+    grid-area: juegos;
+    background-color: rgb(23, 5, 39);
+    color: white;
+    display: grid;
+    grid-template-columns:1fr 8fr;
+    padding:25px;
+}
+
+.index-juegos-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.index-juegos-content img{
     width: 120px;
     margin: 20px;
     box-shadow: 3px 3px 10px gray;
     border-radius:10px;
 }
 
-.index-forspoken-thumbnail img{
-    max-width:120px;
-    margin:20px;
-    box-shadow: 3px 3px 10px gray;
-    border-radius:10px;
+/*index-miembros*/
+.index-miembros{
+    grid-area: miembros;
+    background-color: rgb(1, 1, 34);
+    color: white;
+    display: grid;
+    grid-template-columns:1fr 1fr 7fr 5fr;
+    padding:25px;
 }
 
-.index-hifi-thumbnail img{
-    max-width: 120px;
-    margin: 20px;
-    box-shadow: 3px 3px 10px gray;
-    border-radius:10px;
+.index-miembros-title{
+    padding-top:30px;
 }
 
-.index-deadspace-thumbnail img{
-    max-width: 120px;
-    margin: 20px;
-    box-shadow: 3px 3px 10px gray;
-    border-radius:10px;
+.index-miembros a{
+    padding-left: 30px;
+    padding-right:40px; 
 }
 
-.index-miembros {
-    width:800px;
-    height: auto;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
+.index-miembros p{
+    text-align: justify;
+    padding-bottom: 10px;
 }
 
+/*index-contacto*/
 .index-contacto{
-    width:800px;
-    height: auto;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
+    grid-area: contacto;
+    background-color: rgb(8, 13, 63);
+    color:white;
+    display:grid;
+    grid-template-columns:1fr 7fr;
+    padding:25px;
 }
 
-.blog {
-    width:800px;
-    height: auto;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
+.index-contacto h2{
+    padding-right: 15px;
 }
 
-.juegos {
-    width:800px;
-    height: auto;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
+.index-contacto p{
+    text-align:justify;
+    padding-right:40px;
 }
 
-.juegos .juegos-callisto {
-    padding-bottom: 20px;
-    border-bottom:2px solid white;
+/*index-aside2*/
+.index-aside2{
+    grid-area: aside2;
+    background-color: lightgrey;
 }
 
-.juegos .juegos-callisto img {
-    width: 300px;
+/*footer*/
+footer{
+    grid-area: "pie";
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+    background-image: url("../img/fondo.png");
 }
 
-.juegos .juegos-forspoken {
-    padding: 20px;
-    border-bottom:2px solid white;
+.footer-logo{
+    /*background-color: brown;*/
+    text-align: center;
+    padding-top: 30px;
 }
 
-.juegos .juegos-forspoken img {
-    width:300px;
+.footer-logo img{
+    width: 125px;
 }
 
-.juegos .juegos-hifi {
-    padding: 20px;
-    border-bottom:2px solid white;
+.footer-enlaces{
+    /*background-color:bisque;*/
+    text-align:center;
+    padding-bottom: 30px;
 }
 
-.juegos .juegos-hifi img {
-    width: 300px;
-}
-
-.juegos .juegos-deadspace{
-    padding-top: 20px;
-}
-
-.juegos .juegos-deadspace img{
-    width:300px;
-}
-
-.miembros {
-    width:800px;
-    height: auto;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
-}
-
-.miembros .miembros-eufm{
-    padding-bottom: 20px;
-    border-bottom:2px solid white;
-}
-
-.miembros .miembros-dougan{
-    padding: 20px;
-    border-bottom:2px solid white;
-}
-
-.miembros .miembros-migli0 {
-    padding-top: 20px;
-}
-
-.contacto {
-    width:800px;
-    height: auto;
-    border:4px solid white;
-    padding: 20px 20px;
-    margin: 50px auto;
-}
-
-footer {
-    width:800px;
-    height: auto;
-    background-color: none;
-    border-top: 2px solid white;
-    margin: 5px auto;
-}
-
-footer img{
-    margin-top:15px;
-}
-
-footer .footer-enlaces{
-    margin-bottom:20px;
+.footer-enlaces img {
+    width:20px;
 }
