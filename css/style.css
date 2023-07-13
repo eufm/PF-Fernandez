@@ -228,9 +228,8 @@ footer{
         "blogmain"
         "pie";
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (3, auto);
+    grid-template-rows: repeat (3, auto auto auto);
 }
-
 /*blog-main*/
 .blog-main{
     grid-area: blogmain;
@@ -243,6 +242,13 @@ footer{
 .blog-main-content {
     grid-area: blogcontent;
     background-color: rgb(1, 1, 34);
+    height: 70vh;
+}
+
+.blog-main-content h1 {
+    color: white;
+    padding-left: 25px;
+    padding-top: 25px;
 }
 
 #blogaccordion {
@@ -297,8 +303,32 @@ footer{
         "contactomain"
         "pie";
 }
+/*contacto-main*/
+.contacto-main{
+    grid-area: contactomain;
+    display: grid;
+    grid-template-areas:
+        "aside1 concontent aside2";
+    grid-template-columns: 1fr 6fr 1fr;
+}
 
+.contacto-main-content {
+    grid-area: concontent;
+    background-color: rgb(8, 13, 63);
+    height: 70vh;
+}
 
+.contacto-main-content h1 {
+    color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.cajaformulario {
+    margin: 50px;
+    padding: 25px;
+    background-color: white;
+}
 
 
 
