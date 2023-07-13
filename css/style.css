@@ -16,7 +16,7 @@
 
 /*cabecera*/
 header {
-    grid-area: "cabecera";
+    grid-area: cabecera;
     display:grid;
     grid-template-columns: 1fr 3fr;
     background-image: url("../img/fondo.png");
@@ -59,7 +59,7 @@ main {
         "aside1 miembros aside2"
         "aside1 contacto aside2";
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: repeat (5,auto);
 }
 
 /*index-aside1*/
@@ -75,6 +75,11 @@ main {
     grid-template-rows:1fr 1fr;
 }
 
+.index-enlaces a{
+    color:white;
+    text-decoration: none;
+}
+
 .index-enlaces1 {
     text-align: center;
     padding-top:25px;
@@ -85,11 +90,6 @@ main {
     text-align: center;
     padding-top:10px;
     padding-bottom:25px;
-}
-
-.index-enlaces a{
-    color:white;
-    text-decoration: none;
 }
 
 /*index-blog*/
@@ -212,14 +212,12 @@ footer{
 @media (max-width: 390px) {
     /*cabecera*/
     header {
-        display:grid;
         grid-template-columns: 1fr;
         grid-template-rows:auto auto;
     }
 
     .header-logo {
         text-align: center;
-        padding-top:50px;
         padding-bottom:0px;
         padding-right:0px;
     }
@@ -229,11 +227,11 @@ footer{
     }
 
     .header-menu ul{
-        display:grid;
         grid-template-columns: 2fr 2fr 2fr 3fr 2fr;
         padding-top: 30px;
         padding-left:10px;
         padding-right:30px;
+        padding-bottom: 20px;
     }
 
     .header-menu ul a{
@@ -257,7 +255,6 @@ footer{
 
     /*index-enlaces*/
     .index-enlaces{
-        display: grid;
         grid-template-rows:auto auto;
     }
 
@@ -266,23 +263,17 @@ footer{
     }
 
     .index-enlaces1 {
-        text-align: center;
         padding-top:30px;
-        padding-bottom:10px;
     }
     
     .index-enlaces2 {
-        text-align: center;
-        padding-top:10px;
         padding-bottom:30px;
     }
 
     /*index-blog*/
     .index-blog {
-        display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        padding:25px;
     }
     
     .index-blog h1 {
@@ -301,10 +292,8 @@ footer{
 
     /*index-juegos*/
     .index-juegos{
-        display: grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        padding:25px;
     }
 
     .index-juegos h2{
@@ -312,7 +301,6 @@ footer{
     }
 
     .index-juegos-content{
-        display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
     }
@@ -323,10 +311,8 @@ footer{
 
     /*index-miembros*/
     .index-miembros{
-        display: grid;
         grid-template-columns:auto;
         grid-template-rows: auto auto auto;
-        padding:25px;
     }
 
     .index-miembros h2{
@@ -341,16 +327,13 @@ footer{
     }
 
     .index-miembros p{
-        text-align: justify;
         Font-size: 24px;
     }
 
     /*index-contacto*/
     .index-contacto{
-        display:grid;
         grid-template-columns:1fr;
         grid-template-rows: auto auto;
-        padding:25px;
     }
 
     .index-contacto h2{
@@ -359,13 +342,10 @@ footer{
 
     .index-contacto p{
         font-size: 26px;
-        padding-right:40px;
     }
 
     /*footer*/
     footer{
-        grid-area: "pie";
-        display:grid;
         grid-template-columns:1fr;
         grid-template-rows: auto auto;
     }
@@ -382,5 +362,153 @@ footer{
 }
 /* iPad Pro vertical viewport */
 @media (min-width: 390px) and (max-width: 1024px) {
+    /*Everything*/
+    h1 {
+        font-size:46px;
+        padding-top:10px;
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size:46px;
+        padding-top:10px;
+        padding: 25px;
+    }
+    
+    h3 {
+        font-size:38px;
+        padding-top:10px;
+        padding-left:25px;
+    }
+    
+    p{
+        font-size:32px;
+        text-align: justify;
+        padding: 25px;
+    }
 
+    /*cabecera*/
+    .header-logo {
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left:50px;
+    }
+    
+    .header-logo img{
+        width: 200px;
+    }
+
+    .header-menu ul{
+        grid-template-columns: 1fr 2fr 2fr 3fr 2fr;
+        padding-top: 130px;
+        padding-left:10px;
+        padding-right:50px;
+        padding-bottom: 0px;
+    }
+
+    .header-menu ul a{
+        font-size: 28px;
+    }
+    
+    /*main*/
+    main {
+        grid-template-areas:
+            "enlaces"
+            "blog"
+            "aside1"
+            "juegos"
+            "aside2"
+            "miembros"
+            "contacto";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (7, auto);
+    }
+
+    /*index-enlaces*/
+    .index-enlaces{
+        grid-template-rows:auto auto;
+    }
+
+    .index-enlaces a{
+        font-size:25px;
+        padding-left:15px;
+        padding-bottom:15px;
+    }
+
+    .index-enlaces img {
+        width:35px;
+        padding-right:5px;
+    }
+
+    .index-enlaces1 {
+        padding-top:30px;
+    }
+    
+    .index-enlaces2 {
+        padding-bottom:30px;
+    }
+
+    /*index-blog*/
+    .index-blog {
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+    }
+    
+    .index-blog-content1 {
+        padding-right:0px;
+    }
+
+    /*index-juegos*/
+    .index-juegos{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+    }
+
+    .index-juegos-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align:center;
+    }
+
+    .index-juegos-content img{
+        width: 380px;
+    }
+
+    /*index-miembros*/
+    .index-miembros{
+        grid-template-columns:auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .index-miembros a{
+        text-align: center;
+    }
+
+    .index-miembros img{
+        width: 360px;
+    }
+
+    /*index-contacto*/
+    .index-contacto{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+
+    /*footer*/
+    footer{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-logo img{
+        width:220px;
+        padding-top: 30px;
+    }
+
+    .footer-enlaces img{
+        width: 40px;
+        padding-top:21px;
+    }
 } 
