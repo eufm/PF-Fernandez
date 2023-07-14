@@ -95,6 +95,21 @@ footer{
     grid-template-rows: repeat (5,auto);
 }
 
+#index h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+#index h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+#index p {
+    line-height:20px;
+    text-align: justify;
+}
+
 /*index-aside1*/
 .index-aside1 {
     grid-area: aside1;
@@ -135,9 +150,26 @@ footer{
     padding:25px;
 }
 
-.index-blog-content1 {
+.index-blog-content {
     padding-right: 50px;
-    text-align: justify;
+}
+
+.index-blog-content h3{
+    padding-bottom:10px;
+}
+
+.index-blog-content p{
+    padding-left: 20px;
+}
+
+.index-blog-content .vermas {
+    text-align: end;
+}
+
+.index-blog-content .vermas a{
+    padding-top: 20px;
+    font-size: 18px;
+    color: white;
 }
 
 /*index-juegos*/
@@ -150,16 +182,32 @@ footer{
     padding:25px;
 }
 
+.index.juegos.layout {
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
 .index-juegos-content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .index-juegos-content img{
-    width: 120px;
+    width: 160px;
     margin: 20px;
     box-shadow: 3px 3px 10px gray;
     border-radius:10px;
+}
+
+.index-juegos-layout .vermas {
+    text-align: end;
+    padding-right: 20px;
+}
+
+.index-juegos-layout .vermas a{
+    padding-top: 20px;
+    font-size: 18px;
+    color: white;
 }
 
 /*index-miembros*/
@@ -168,17 +216,13 @@ footer{
     background-color: rgb(1, 1, 34);
     color: white;
     display: grid;
-    grid-template-columns:1fr 1fr 7fr 5fr;
+    grid-template-columns:1fr 1fr 7fr 1fr;
     padding:25px;
 }
 
 .index-miembros h2{
     padding-top:30px;
-}
-
-.index-miembros a{
-    padding-left: 30px;
-    padding-right:40px; 
+    padding-right:20px;
 }
 
 .index-miembros img{
@@ -186,8 +230,22 @@ footer{
 }
 
 .index-miembros p{
-    text-align: justify;
     padding-bottom: 10px;
+}
+
+.index-miembros .miembros-descrip {
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
+.index-miembros .vermas {
+    text-align: end;
+}
+
+.index-miembros .vermas a{
+    padding-top: 20px;
+    font-size: 18px;
+    color: white;    
 }
 
 /*index-contacto*/
@@ -196,7 +254,7 @@ footer{
     background-color: rgb(8, 13, 63);
     color:white;
     display:grid;
-    grid-template-columns:1fr 7fr;
+    grid-template-columns:1fr 6fr 2fr;
     padding:25px;
 }
 
@@ -205,8 +263,12 @@ footer{
 }
 
 .index-contacto p{
-    text-align:justify;
     padding-right:40px;
+    padding-left: 20px;
+}
+
+.index-contacto p a{
+    color:white;
 }
 
 /*index-aside2*/
@@ -381,6 +443,25 @@ footer{
         grid-template-rows: repeat (7, auto);
     }
 
+    #index p{
+        line-height:30px;
+    }
+
+    #index h2{
+        padding-bottom: 15px;
+    }
+
+    #index .vermas{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    #index .vermas a{
+        font-size:25px;
+        padding-top:200px;
+        padding-bottom:20px;
+    }
+
     /*index-enlaces*/
     .index-enlaces{
         grid-template-rows:auto auto;
@@ -408,13 +489,13 @@ footer{
         font-size: 36px;
     }
 
-    .index-blog-content1 h2{
+    .index-blog-content h3{
         font-size:30px;
         padding-top:25px;
         padding-bottom:25px;
     }
 
-    .index-blog-content1 p{
+    .index-blog-content p{
         font-size:24px;
     }
 
@@ -521,6 +602,19 @@ footer{
         font-size:32px;
         text-align: justify;
         padding: 25px;
+        line-height:45px;
+    }
+
+    #index .vermas{
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right:50px;
+    }
+
+    #index .vermas a{
+        font-size:32px;
+        padding-top:200px;
+        padding-bottom:20px;
     }
 
     /*cabecera*/
