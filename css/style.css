@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-seriff;
 }
 
-/*index-cabecera*/
+/*cabecera*/
 header {
     grid-area: cabecera;
     display:grid;
@@ -428,7 +428,25 @@ footer{
         font-size: 24px;
     }
     
-    /*main*/
+    /*footer*/
+    footer{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-logo img{
+        width:220px;
+        padding-top: 30px;
+    }
+
+    .footer-enlaces img{
+        width: 40px;
+        padding-top:21px;
+    }
+
+    /*Página Web Index*/
+
+    /*index-main*/
     #index main {
         display:grid;
         grid-template-areas:
@@ -553,20 +571,33 @@ footer{
         font-size: 26px;
     }
 
-    /*footer*/
-    footer{
-        grid-template-columns:1fr;
-        grid-template-rows: auto auto;
+
+    /*Página Web Blog*/
+    
+    #blog .header-menu ul{
+        grid-template-columns: 2fr 2fr 2fr 3fr 2fr;
+        padding-top: 10px;
+        padding-left:10px;
+        padding-right:20px;
+        padding-bottom: 0px;
     }
 
-    .footer-logo img{
-        width:220px;
-        padding-top: 30px;
+    #blog .header-menu ul a{
+    font-size:16px;
     }
 
-    .footer-enlaces img{
-        width: 40px;
-        padding-top:21px;
+    /*Página Web Contacto*/
+    
+    #contacto .header-menu ul{
+        grid-template-columns: 2fr 2fr 2fr 3fr 2fr;
+        padding-top: 10px;
+        padding-left:10px;
+        padding-right:20px;
+        padding-bottom: 0px;
+    }
+
+    #contacto .header-menu ul a{
+    font-size:16px;
     }
 }
 
@@ -641,7 +672,23 @@ footer{
         font-size: 28px;
     }
     
-    /*main*/
+    /*footer*/
+    footer{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-logo img{
+        width:220px;
+        padding-top: 30px;
+    }
+
+    .footer-enlaces img{
+        width: 40px;
+        padding-top:21px;
+    }
+
+    /*index-main*/
     #index main {
         grid-template-areas:
             "enlaces"
@@ -724,21 +771,5 @@ footer{
     .index-contacto{
         grid-template-columns:1fr;
         grid-template-rows: auto auto;
-    }
-
-    /*footer*/
-    footer{
-        grid-template-columns:1fr;
-        grid-template-rows: auto auto;
-    }
-
-    .footer-logo img{
-        width:220px;
-        padding-top: 30px;
-    }
-
-    .footer-enlaces img{
-        width: 40px;
-        padding-top:21px;
     }
 } 
