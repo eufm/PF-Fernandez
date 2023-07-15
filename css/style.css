@@ -414,6 +414,8 @@ footer{
 
 
 
+
+
 /*Página Web Miembros*/
 #miembros {
     display:grid;
@@ -424,6 +426,67 @@ footer{
 }
 
 /*miembros-main*/
+.miembros-main{
+    grid-area:miembrosmain;
+    display:grid;
+    grid-template-areas:
+    "aside1 miembroscontent aside2";
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.miembros-main-content{
+    grid-area: miembroscontent;
+    background-color: rgb(1,1, 34);
+    /*height: 70vh;*/
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.miembros-main-content h1 {
+    color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-size: 36px;
+}
+
+.miembros-content {
+    display: grid;
+    grid-template-rows: repeat (3, auto)
+}
+
+.miembros-content img {
+    width: 210px;
+}
+
+.miembros-content p{
+    color:white;
+    padding-top:15px;
+    padding-left:25px;
+    padding-right:30px;
+    text-align: justify;
+    line-height: 20px;
+    max-width:860px;
+}
+
+.miembros-eufm {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 50px;
+}
+
+.miembros-dougan {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 50px;
+}
+
+.miembros-migli0 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 50px;
+}
+
 
 
 
@@ -438,6 +501,7 @@ footer{
         "contactomain"
         "pie";
 }
+
 /*contacto-main*/
 .contacto-main{
     grid-area: contactomain;
