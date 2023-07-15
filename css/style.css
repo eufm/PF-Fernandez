@@ -726,6 +726,133 @@ footer{
         height: auto;
     }
 
+    /*Página Web Juegos*/
+    #juegos .header-logo img{
+        padding-right:0px;
+        padding-bottom:0px;
+    }
+    
+    #juegos .header-menu ul{
+        padding-top: 10px;
+        padding-left:10px;
+        padding-right:20px;
+        padding-bottom: 20px;
+    }
+
+    #juegos .header-menu ul a{
+    font-size:16px;
+    }
+    
+    .juegos-main{
+        grid-template-areas:
+        "aside1" "juegoscontent" "aside2";
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+    }
+
+    .juegos-content a{
+        text-align: center;
+    }
+
+    .juegos-content img{
+        width:260px;
+    }
+
+    .juegos-content p{
+        color:white;
+        padding-top:15px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 32px;
+        font-size:21px;
+    }
+
+    .juegos-callisto{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-forspoken{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-hifi{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-deadspace{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+
+
+
+    /*Página Web Miembros*/
+    #miembros .header-logo img{
+        padding-right:0px;
+        padding-bottom:0px;
+    }
+    
+    #miembros .header-menu ul{
+        padding-top: 10px;
+        padding-left:10px;
+        padding-right:20px;
+        padding-bottom: 20px;
+    }
+
+    #miembros .header-menu ul a{
+    font-size:16px;
+    }
+    
+    .miembros-main{
+        grid-template-areas:
+        "aside1" "miembroscontent" "aside2";
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+    }
+
+    .miembros-content a{
+        text-align: center;
+    }
+
+    .miembros-content img{
+        width:260px;
+    }
+
+    .miembros-content p{
+        color:white;
+        padding-top:15px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 32px;
+        font-size:21px;
+    }
+
+    .miembros-eufm{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .miembros-dougan{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .miembros-migli0{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
     /*Página Web Contacto*/
     
     #contacto .header-menu ul{
@@ -910,5 +1037,86 @@ footer{
     .index-contacto{
         grid-template-columns:1fr;
         grid-template-rows: auto auto;
+    }
+
+    /*Página Web Juegos*/
+    .juegos-content a{
+        text-align: center;
+    }
+
+    .juegos-content img{
+        width:320px;
+    }
+
+    .juegos-content p{
+        color:white;
+        padding-top:15px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 36px;
+        font-size:26px;
+    }
+
+    .juegos-callisto{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-forspoken{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-hifi{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-deadspace{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+
+
+
+    /*Página Web Miembros*/
+    .miembros-content a{
+        text-align: center;
+    }
+
+    .miembros-content img{
+        width:320px;
+    }
+
+    .miembros-content p{
+        color:white;
+        padding-top:15px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 36px;
+        font-size:26px;
+    }
+
+    .miembros-eufm{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .miembros-dougan{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .miembros-migli0{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
     }
 } 
