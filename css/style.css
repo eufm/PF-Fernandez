@@ -114,6 +114,20 @@ footer{
 /*index-aside1*/
 .index-aside1 {
     grid-area: aside1;
+    background-image: url("../img/RE4-Beh-Nostal-Scorn-01.jpg");
+    background-repeat: repeat-y;
+}
+
+/*index-aside2*/
+.index-aside2{
+    grid-area: aside2;
+    background-image: url("../img/HL-DI2-Trine4-Under-02.jpg");
+    background-repeat: repeat-y;
+    background-color: black;
+}
+
+.index-aside2 img{
+    width: 250px;
 }
 
 /*index-enlaces*/
@@ -270,12 +284,6 @@ footer{
 
 .index-contacto p a{
     color:white;
-}
-
-/*index-aside2*/
-.index-aside2{
-    grid-area: aside2;
-    background-color: lightgrey;
 }
 
 
