@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    border:0;
+    margin:0;
+    font-family: 'Montserrat', sans-seriff;
+}
+
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'pageblog';
+@import 'pagejuegos';
+@import 'pagemiembros';
+@import 'pagecontacto';
+
+
+//queries
+@import 'tabletviewport';
+@import 'phoneviewport';
+
+//Juegos
+@import 'juegocallisto';
+
+
+//aside1
+.asideizq {
+    grid-area: aside1;
+    background-image: $fondobannerizq;
+    background-repeat: repeat-y;
+}
+
+//index-aside2
+.asideder{
+    grid-area: aside2;
+    background-image: $fondobannerder;
+    background-repeat: repeat-y;
+    background-color: black;
+}
+
+//Página Web Index
+.index {
+    display:grid;
+    grid-template-areas:
+        "cabecera"
+        "indexmain"
+        "pie";
+    grid-template-rows: auto auto auto;
+    & main {
+        grid-area:indexmain;
+        display:grid;
+        grid-template-areas:
+            "aside1 enlaces aside2"
+            "aside1 blog aside2"
+            "aside1 juegos aside2"
+            "aside1 miembros aside2"
+            "aside1 contacto aside2";
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: repeat (5,auto);
+        h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        h2 a{
+            text-decoration: none;
+            color: white;
+        }
+        p {
+            line-height:20px;
+            text-align: justify;
+        }
+        //index-enlaces
+        .index-enlaces{
+            grid-area: enlaces;
+            background-color:map-get($colores, enlaces);
+            display: grid;
+            grid-template-rows:1fr 1fr;
+            a{
+                color:white;
+                text-decoration: none;
+            }
+            &1 {
+                text-align: center;
+                padding-top:25px;
+                padding-bottom:10px;
+            }
+            &2 {
+                text-align: center;
+                padding-top:10px;
+                padding-bottom:25px;
+            }
+        }
+        //index-blog
+        .index-blog {
+            grid-area: blog;
+            background-color: map-get($colores, blog);
+            color: white;
+            display:grid;
+            grid-template-columns:1fr 8fr;
+            padding:25px;
+            &-content {
+                padding-right: 50px;
+                h3{
+                    padding-bottom:10px;
+                }
+                p{
+                    padding-left: 20px;
+                }
+                .vermas {
+                    text-align: end;
+                    a{
+                        padding-top: 20px;
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+            }
+        }
+        //index-juegos
+        .index-juegos{
+            grid-area: juegos;
+            background-color:map-get($colores, juegos);
+            color: white;
+            display: grid;
+            grid-template-columns:1fr 8fr;
+            padding:25px;
+            &-layout {
+                display:grid;
+                grid-template-rows: auto auto;
+                .vermas {
+                    text-align: end;
+                    padding-right: 20px;
+                    a{
+                        padding-top: 20px;
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+            }
+            &-content{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                img{
+                    width: 240px;
+                    margin: 20px;
+                    box-shadow: 3px 3px 10px gray;
+                    border-radius:10px;
+                }
+            }
+        }
+        //index-miembros
+        .index-miembros{
+            grid-area: miembros;
+            background-color: map-get($colores, miembros);
+            color: white;
+            display: grid;
+            grid-template-columns:1fr 1fr 7fr 1fr;
+            padding:25px;
+            h2{
+                padding-top:30px;
+                padding-right:20px;
+            }
+            img{
+                width:130px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+            .miembros-descrip {
+                display:grid;
+                grid-template-rows: auto auto;
+            }
+            .vermas {
+                text-align: end;
+                a{
+                    padding-top: 20px;
+                    font-size: 18px;
+                    color: white;    
+                }
+            }
+        }
+        //index-contacto
+        .index-contacto{
+            grid-area: contacto;
+            background-color: map-get($colores, contacto);
+            color:white;
+            display:grid;
+            grid-template-columns:1fr 6fr 2fr;
+            padding:25px;
+            h2{
+                padding-right: 15px;
+            }
+            p{
+                padding-right:40px;
+                padding-left: 20px;
+                a{
+                    color:white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

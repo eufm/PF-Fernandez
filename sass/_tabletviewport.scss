@@ -1,0 +1,246 @@
+//iPad Pro vertical viewport
+@media (min-width: $phonedim) and (max-width: $tabletdim) {
+    /*Everything en index*/
+    #index h1 {
+        font-size:46px;
+        padding-top:10px;
+        padding: 25px;
+    }
+    
+    #index h2 {
+        font-size:46px;
+        padding-top:10px;
+        padding: 25px;
+    }
+    
+    #index h3 {
+        font-size:38px;
+        padding-top:10px;
+        padding-left:25px;
+    }
+    
+    #index p{
+        font-size:32px;
+        text-align: justify;
+        padding: 25px;
+        line-height:45px;
+    }
+
+    #index .vermas{
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right:50px;
+    }
+
+    #index .vermas a{
+        font-size:32px;
+        padding-top:200px;
+        padding-bottom:20px;
+    }
+
+    /*cabecera*/
+    .header-logo {
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left:50px;
+    }
+    
+    .header-logo img{
+        width: 280px;
+    }
+
+    .header-menu ul{
+        grid-template-columns: 1fr 2fr 2fr 3fr 2fr;
+        padding-top: 160px;
+        padding-left:10px;
+        padding-right:50px;
+        padding-bottom: 0px;
+    }
+
+    .header-menu ul a{
+        font-size: 28px;
+    }
+    
+    /*footer*/
+    footer{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-logo img{
+        width:220px;
+        padding-top: 30px;
+    }
+
+    .footer-enlaces img{
+        width: 40px;
+        padding-top:21px;
+    }
+
+    /*index-main*/
+    #index main {
+        grid-template-areas:
+            "enlaces"
+            "blog"
+            "aside1"
+            "juegos"
+            "aside2"
+            "miembros"
+            "contacto";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (7, auto);
+    }
+
+    /*index-enlaces*/
+    .index-enlaces{
+        grid-template-rows:auto auto;
+    }
+
+    .index-enlaces a{
+        font-size:25px;
+        padding-left:15px;
+        padding-bottom:15px;
+    }
+
+    .index-enlaces img {
+        width:35px;
+        padding-right:5px;
+    }
+
+    .index-enlaces1 {
+        padding-top:30px;
+    }
+    
+    .index-enlaces2 {
+        padding-bottom:30px;
+    }
+
+    /*index-blog*/
+    .index-blog {
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+    }
+    
+    .index-blog-content1 {
+        padding-right:0px;
+    }
+
+    /*index-juegos*/
+    .index-juegos{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+    }
+
+    .index-juegos-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align:center;
+    }
+
+    .index-juegos-content img{
+        width: 380px;
+    }
+
+    /*index-miembros*/
+    .index-miembros{
+        grid-template-columns:auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .index-miembros a{
+        text-align: center;
+    }
+
+    .index-miembros img{
+        width: 360px;
+    }
+
+    /*index-contacto*/
+    .index-contacto{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+
+    /*Página Web Juegos*/
+    .juegos-content a{
+        text-align: center;
+    }
+
+    .juegos-content img{
+        width:320px;
+    }
+
+    .juegos-content p{
+        color:white;
+        padding-top:15px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 36px;
+        font-size:26px;
+    }
+
+    .juegos-callisto{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-forspoken{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-hifi{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .juegos-deadspace{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+
+
+
+    /*Página Web Miembros*/
+    .miembros-content a{
+        text-align: center;
+    }
+
+    .miembros-content img{
+        width:320px;
+    }
+
+    .miembros-content p{
+        color:white;
+        padding-top:15px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 36px;
+        font-size:26px;
+    }
+
+    .miembros-eufm{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .miembros-dougan{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+
+    .miembros-migli0{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        margin:25px;
+    }
+} 

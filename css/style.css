@@ -350,8 +350,18 @@ footer{
     grid-area: juegosmain;
     display: grid;
     grid-template-areas:
-        "aside1 juegoscontent aside2";
+        "juegoside1 juegoscontent juegoside2";
     grid-template-columns: 1fr 6fr 1fr;
+}
+
+.juegos-aside1{
+    grid-area: juegoside1;
+    background-color: rgb(23, 5, 39);
+}
+
+.juegos-aside2{
+    grid-area: juegoside2;
+    background-color: rgb(23, 5, 39);
 }
 
 .juegos-main-content {

@@ -1,0 +1,23 @@
+//Página Web Contacto
+.contacto-main{
+    grid-area: contactomain;
+    display: grid;
+    grid-template-areas:
+        "aside1 concontent aside2";
+    grid-template-columns: 1fr 6fr 1fr;
+    &-content {
+        grid-area: concontent;
+        background-color: map-get($colores, contacto);
+        padding-bottom:260px;
+        h1 {
+            color: white;
+            padding-left: 25px;
+            padding-top: 25px;
+        }
+        .cajaformulario {
+            margin: 50px;
+            padding: 25px;
+            background-color: white;
+        }
+    }
+}

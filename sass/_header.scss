@@ -1,0 +1,29 @@
+//header
+header {
+    grid-area: cabecera;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    background-image: $fondopersonal;
+    .header-logo {
+        text-align: end;
+        padding-top:50px;
+        padding-bottom:25px;
+        padding-right:25px;
+        img{
+            width: 150px;
+        }
+    }
+    .header-menu ul{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 4fr;
+    list-style: none;
+    text-align: center;
+    padding-top: 100px;
+    a{
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        }
+    }
+}

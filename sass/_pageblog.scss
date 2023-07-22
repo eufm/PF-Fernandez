@@ -1,0 +1,28 @@
+//Página Web Blog
+.blog {
+    display:grid;
+    grid-template-areas:
+        "cabecera"
+        "blogmain"
+        "pie";
+    &-main{
+        grid-area: blogmain;
+        display: grid;
+        grid-template-areas:
+            "aside1 blogcontent aside2";
+        grid-template-columns: 1fr 6fr 1fr;
+        &-content {
+            grid-area: blogcontent;
+            background-color: map-get($colores, blog);
+            padding-bottom: 450px;
+            h1 {
+                color: white;
+                padding-left: 25px;
+                padding-top: 25px;
+            }
+            #blogaccordion {
+                padding: 50px;
+            }
+        }
+    }
+}
