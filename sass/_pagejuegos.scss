@@ -5,73 +5,72 @@
         "cabecera"
         "juegosmain"
         "pie";
-    &-main{
-        grid-area: juegosmain;
-        display: grid;
-        grid-template-areas:
-            "juegoside1 juegoscontent juegoside2";
-        grid-template-columns: 1fr 6fr 1fr;
-        &-aside1{
-            grid-area: juegoside1;
-            background-color: rgb(23, 5, 39);
-        }
-        &-aside2{
-            grid-area: juegoside2;
-            background-color: rgb(23, 5, 39);
-        }
-        &-content {
-            grid-area: juegoscontent;
-            background-color: map-get($colores, juegos);
-            display:grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto;
-            h1 {
-                color: white;
-                padding-left: 25px;
-                padding-top: 25px;
-                font-size: 36px;
-            }
-            .juegos-content {
-                display: grid;
-                grid-template-rows: auto auto auto auto;
-                img{
-                    width:200px;
-                    box-shadow: 3px 3px 10px gray;
-                    border-radius:10px;
-                }
-                p{
-                    color:white;
-                    padding-top:15px;
-                    padding-left:25px;
-                    padding-right:30px;
-                    text-align: justify;
-                    line-height: 20px;
-                    max-width:860px;
-                }
-                &-callisto {
-                    display: grid;
-                    grid-template-columns: 1fr 5fr;
-                    margin: 50px;
-                }
-                &-forspoken {
-                    display: grid;
-                    grid-template-columns: 1fr 5fr;
-                    margin: 50px;
-                }
-                &-hifi {
-                    display: grid;
-                    grid-template-columns: 1fr 5fr;
-                    margin: 50px;
-                }
-                &-deadspace {
-                    display: grid;
-                    grid-template-columns: 1fr 5fr;
-                    margin: 50px;
-                }
-            }
+}
+.juegos-main{
+    grid-area: juegosmain;
+    display: grid;
+    grid-template-areas:
+        "juegoside1 juegoscontent juegoside2";
+    grid-template-columns: 1fr 6fr 1fr;
+    &-aside1{
+        grid-area: juegoside1;
+        background-color: rgb(23, 5, 39);
+    }
+    &-aside2{
+        grid-area: juegoside2;
+        background-color: rgb(23, 5, 39);
+    }
+    &-content {
+        grid-area: juegoscontent;
+        background-color: map-get($colores, juegos);
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        h1 {
+            color: white;
+            padding-left: 25px;
+            padding-top: 25px;
+            font-size: 36px;
         }
     }
 }
-
+.juegos-content {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    img{
+        width:200px;
+        box-shadow: 3px 3px 10px gray;
+        border-radius:10px;
+    }
+    p{
+        color:white;
+            padding-top:15px;
+            padding-left:25px;
+            padding-right:30px;
+            text-align: justify;
+            line-height: 20px;
+            max-width:860px;
+        }
+    &-callisto {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin: 50px;
+    }
+    &-forspoken {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin: 50px;
+    }
+    &-hifi {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin: 50px;
+    }
+    &-deadspace {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin: 50px;
+    }
+}
 
 

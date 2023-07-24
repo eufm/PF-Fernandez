@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   border: 0;
@@ -17,22 +16,27 @@ header .header-logo {
   padding-top: 50px;
   padding-bottom: 25px;
   padding-right: 25px;
+  margin: 0;
+  border: 0;
 }
 header .header-logo img {
-  width: 150px;
+  width: 175px;
 }
 header .header-menu ul {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 4fr;
+  grid-template-columns: auto auto auto auto auto auto auto;
   list-style: none;
   text-align: center;
   padding-top: 100px;
+  padding-left: 0;
+  border: 0;
+  margin: 0;
 }
 header .header-menu ul a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 footer {
@@ -54,6 +58,174 @@ footer .footer-enlaces {
 }
 footer .footer-enlaces img {
   width: 20px;
+}
+
+.index {
+  display: grid;
+  grid-template-areas: "cabecera" "indexmain" "pie";
+  grid-template-rows: auto auto auto;
+}
+.index main {
+  grid-area: indexmain;
+  display: grid;
+  grid-template-areas: "aside1 enlaces aside2" "aside1 blog aside2" "aside1 juegos aside2" "aside1 miembros aside2" "aside1 contacto aside2";
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: repeat 5, auto;
+}
+.index main h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+.index main h2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+.index main p {
+  line-height: 28px;
+  font-size: 21px;
+  text-align: justify;
+}
+
+.index-enlaces {
+  grid-area: enlaces;
+  background-color: rgb(8, 13, 63);
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.index-enlaces img {
+  width: 23px;
+  padding-left: 15px;
+}
+.index-enlaces a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+}
+.index-enlaces0 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+.index-enlaces1 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.index-enlaces2 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+.index-blog {
+  grid-area: blog;
+  background-color: rgb(1, 1, 34);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  padding: 25px;
+}
+.index-blog-content {
+  padding-right: 50px;
+}
+.index-blog-content h3 {
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.index-blog-content p {
+  padding-left: 20px;
+}
+.index-blog-content .vermas {
+  text-align: end;
+}
+.index-blog-content .vermas a {
+  padding-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.index-juegos {
+  grid-area: juegos;
+  background-color: rgb(23, 5, 39);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  padding: 25px;
+}
+.index-juegos-layout {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.index-juegos-layout .index-juegos-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.index-juegos-layout .index-juegos-content img {
+  width: 240px;
+  margin: 20px;
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 10px;
+}
+.index-juegos-layout .vermas {
+  text-align: end;
+  padding-right: 20px;
+}
+.index-juegos-layout .vermas a {
+  padding-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.index-miembros {
+  grid-area: miembros;
+  background-color: rgb(1, 1, 34);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 7fr 1fr;
+  padding: 25px;
+}
+.index-miembros h2 {
+  padding-top: 30px;
+  padding-right: 20px;
+}
+.index-miembros img {
+  width: 130px;
+}
+.index-miembros p {
+  padding-bottom: 10px;
+}
+.index-miembros .miembros-descrip {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.index-miembros .vermas {
+  text-align: end;
+}
+.index-miembros .vermas a {
+  padding-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.index-contacto {
+  grid-area: contacto;
+  background-color: rgb(8, 13, 63);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  padding: 25px;
+}
+.index-contacto h2 {
+  padding-right: 15px;
+}
+.index-contacto p {
+  padding-right: 40px;
+  padding-left: 20px;
+}
+.index-contacto p a {
+  color: white;
 }
 
 .blog {
@@ -84,6 +256,7 @@ footer .footer-enlaces img {
   display: grid;
   grid-template-areas: "cabecera" "juegosmain" "pie";
 }
+
 .juegos-main {
   grid-area: juegosmain;
   display: grid;
@@ -111,16 +284,17 @@ footer .footer-enlaces img {
   padding-top: 25px;
   font-size: 36px;
 }
-.juegos-main-content .juegos-content {
+
+.juegos-content {
   display: grid;
   grid-template-rows: auto auto auto auto;
 }
-.juegos-main-content .juegos-content img {
+.juegos-content img {
   width: 200px;
   box-shadow: 3px 3px 10px gray;
   border-radius: 10px;
 }
-.juegos-main-content .juegos-content p {
+.juegos-content p {
   color: white;
   padding-top: 15px;
   padding-left: 25px;
@@ -129,22 +303,22 @@ footer .footer-enlaces img {
   line-height: 20px;
   max-width: 860px;
 }
-.juegos-main-content .juegos-content-callisto {
+.juegos-content-callisto {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin: 50px;
 }
-.juegos-main-content .juegos-content-forspoken {
+.juegos-content-forspoken {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin: 50px;
 }
-.juegos-main-content .juegos-content-hifi {
+.juegos-content-hifi {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin: 50px;
 }
-.juegos-main-content .juegos-content-deadspace {
+.juegos-content-deadspace {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin: 50px;
@@ -223,204 +397,21 @@ footer .footer-enlaces img {
   background-color: white;
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
-  /*Everything en index*/
-  #index h1 {
-    font-size: 46px;
-    padding-top: 10px;
-    padding: 25px;
-  }
-  #index h2 {
-    font-size: 46px;
-    padding-top: 10px;
-    padding: 25px;
-  }
-  #index h3 {
-    font-size: 38px;
-    padding-top: 10px;
-    padding-left: 25px;
-  }
-  #index p {
-    font-size: 32px;
-    text-align: justify;
-    padding: 25px;
-    line-height: 45px;
-  }
-  #index .vermas {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 50px;
-  }
-  #index .vermas a {
-    font-size: 32px;
-    padding-top: 200px;
-    padding-bottom: 20px;
-  }
-  /*cabecera*/
-  .header-logo {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-  }
-  .header-logo img {
-    width: 280px;
-  }
-  .header-menu ul {
-    grid-template-columns: 1fr 2fr 2fr 3fr 2fr;
-    padding-top: 160px;
-    padding-left: 10px;
-    padding-right: 50px;
-    padding-bottom: 0px;
-  }
-  .header-menu ul a {
-    font-size: 28px;
-  }
-  /*footer*/
-  footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  .footer-logo img {
-    width: 220px;
-    padding-top: 30px;
-  }
-  .footer-enlaces img {
-    width: 40px;
-    padding-top: 21px;
-  }
-  /*index-main*/
-  #index main {
-    grid-template-areas: "enlaces" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 7, auto;
-  }
-  /*index-enlaces*/
-  .index-enlaces {
-    grid-template-rows: auto auto;
-  }
-  .index-enlaces a {
-    font-size: 25px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-  }
-  .index-enlaces img {
-    width: 35px;
-    padding-right: 5px;
-  }
-  .index-enlaces1 {
-    padding-top: 30px;
-  }
-  .index-enlaces2 {
-    padding-bottom: 30px;
-  }
-  /*index-blog*/
-  .index-blog {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  .index-blog-content1 {
-    padding-right: 0px;
-  }
-  /*index-juegos*/
-  .index-juegos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  .index-juegos-content {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    text-align: center;
-  }
-  .index-juegos-content img {
-    width: 380px;
-  }
-  /*index-miembros*/
-  .index-miembros {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-  }
-  .index-miembros a {
-    text-align: center;
-  }
-  .index-miembros img {
-    width: 360px;
-  }
-  /*index-contacto*/
-  .index-contacto {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  /*Página Web Juegos*/
-  .juegos-content a {
-    text-align: center;
-  }
-  .juegos-content img {
-    width: 320px;
-  }
-  .juegos-content p {
-    color: white;
-    padding-top: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: 36px;
-    font-size: 26px;
-  }
-  .juegos-callisto {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-  .juegos-forspoken {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-  .juegos-hifi {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-  .juegos-deadspace {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-  /*Página Web Miembros*/
-  .miembros-content a {
-    text-align: center;
-  }
-  .miembros-content img {
-    width: 320px;
-  }
-  .miembros-content p {
-    color: white;
-    padding-top: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: 36px;
-    font-size: 26px;
-  }
-  .miembros-eufm {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-  .miembros-dougan {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-  .miembros-migli0 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 25px;
-  }
-}
 @media (max-width: 480px) {
+  .asideizq {
+    display: none;
+  }
+  .juegos-main-aside1 {
+    display: none;
+  }
+  .asideder {
+    display: none;
+  }
+  .juegos-main-aside2 {
+    display: none;
+  }
   header {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto;
   }
   header .header-logo {
@@ -429,17 +420,14 @@ footer .footer-enlaces img {
     padding-right: 0px;
   }
   header .header-logo img {
-    width: 200px;
+    width: 250px;
   }
   header .header-menu ul {
-    grid-template-columns: 2fr 2fr 2fr 3fr 2fr;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 30px;
   }
   header .header-menu ul a {
-    font-size: 24px;
+    font-size: 26px;
   }
   footer .footer-logo img {
     width: 220px;
@@ -450,15 +438,20 @@ footer .footer-enlaces img {
     padding-top: 21px;
   }
   .index main {
-    grid-template-areas: "enlaces" "blog" "juegos" "aside1" "aside2" "miembros" "contacto";
+    grid-template-areas: "enlaces" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
     grid-template-columns: 1fr;
     grid-template-rows: repeat 7, auto;
   }
   .index main p {
-    line-height: 36px;
+    line-height: 32px;
+    font-size: 24px;
   }
-  .index main h2 {
+  .index main h1 a {
+    font-size: 32px;
+  }
+  .index main h2 a {
     padding-bottom: 15px;
+    font-size: 32px;
   }
   .index main .vermas {
     padding-top: 20px;
@@ -469,106 +462,89 @@ footer .footer-enlaces img {
     padding-top: 200px;
     padding-bottom: 20px;
   }
-  .index main .index-enlaces {
+  .index-enlaces {
     grid-template-rows: auto auto;
   }
-  .index main .index-enlaces a {
-    font-size: 16px;
+  .index-enlaces img {
+    width: 22px;
   }
-  .index main .index-enlaces1 {
-    padding-top: 30px;
+  .index-enlaces a {
+    font-size: 22px;
   }
-  .index main .index-enlaces2 {
+  .index-enlaces0 {
+    padding-bottom: 0px;
+  }
+  .index-enlaces1 {
+    padding-top: 15px;
+  }
+  .index-enlaces2 {
     padding-bottom: 30px;
   }
-  .index main .index-blog {
-    display: grid;
-    grid-template-columns: auto;
+  .index-blog {
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
-  .index main .index-blog h1 {
+  .index-blog h1 {
     font-size: 36px;
   }
-  .index main .index-blog-content h3 {
-    font-size: 30px;
+  .index-blog-content h3 {
+    font-size: 26px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .index main .index-blog-content p {
+  .index-blog-content p {
     font-size: 24px;
-    line-height: 36px;
   }
-  .index main .index-juegos {
+  .index-juegos {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
-  .index main .index-juegos h2 {
+  .index-juegos h2 {
     font-size: 36px;
   }
-  .index main .index-juegos .index-juegos-content {
+  .index-juegos .index-juegos-content {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
   }
-  .index main .index-juegos .index-juegos-content img {
+  .index-juegos .index-juegos-content img {
     width: 240px;
   }
-  .index main .index-miembros {
+  .index-miembros {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
   }
-  .index main .index-miembros h2 {
+  .index-miembros h2 {
     font-size: 36px;
   }
-  .index main .index-miembros a {
+  .index-miembros a {
     text-align: center;
   }
-  .index main .index-miembros img {
+  .index-miembros img {
     width: 210px;
   }
-  .index main .index-miembros p {
+  .index-miembros p {
     font-size: 24px;
   }
-  .index main .index-contacto {
+  .index-contacto {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
-  .index main .index-contacto h2 {
+  .index-contacto h2 {
     font-size: 36px;
+    padding-bottom: 10px;
   }
-  .index main .index-contacto p {
+  .index-contacto p {
     font-size: 26px;
   }
-  /*Página Web Blog*/
-  #blog .header-menu ul {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-  }
-  #blog .header-menu ul a {
-    font-size: 16px;
-  }
-  .blog-main-content {
-    height: auto;
-  }
-  /*Página Web Juegos*/
-  #juegos .header-logo img {
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-  #juegos .header-menu ul {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-  #juegos .header-menu ul a {
-    font-size: 16px;
-  }
-  .juegos-main {
-    grid-template-areas: "aside1" "juegoscontent" "aside2";
+  .blog-main {
+    grid-template-areas: "aside1" "blogcontent" "aside2";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+  }
+  .juegos-main {
+    grid-template-areas: "juegoscontent";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
   .juegos-content a {
     text-align: center;
@@ -584,44 +560,30 @@ footer .footer-enlaces img {
     line-height: 32px;
     font-size: 21px;
   }
-  .juegos-callisto {
+  .juegos-content-callisto {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
   }
-  .juegos-forspoken {
+  .juegos-content-forspoken {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
   }
-  .juegos-hifi {
+  .juegos-content-hifi {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
   }
-  .juegos-deadspace {
+  .juegos-content-deadspace {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
-  }
-  /*Página Web Miembros*/
-  #miembros .header-logo img {
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-  #miembros .header-menu ul {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-  #miembros .header-menu ul a {
-    font-size: 16px;
   }
   .miembros-main {
-    grid-template-areas: "aside1" "miembroscontent" "aside2";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-areas: "miembroscontent";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
   .miembros-content a {
     text-align: center;
@@ -637,30 +599,260 @@ footer .footer-enlaces img {
     line-height: 32px;
     font-size: 21px;
   }
-  .miembros-eufm {
+  .miembros-content .miembros-eufm {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
   }
-  .miembros-dougan {
+  .miembros-content .miembros-dougan {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
   }
-  .miembros-migli0 {
+  .miembros-content .miembros-migli0 {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 25px;
   }
-  /*Página Web Contacto*/
-  #contacto .header-menu ul {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
+  .contacto-main {
+    grid-template-areas: "concontent";
+    grid-template-columns: auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  .asideizq {
+    display: none;
+  }
+  .juegos-main-aside1 {
+    display: none;
+  }
+  .asideder {
+    display: none;
+  }
+  .juegos-main-aside2 {
+    display: none;
+  }
+  header .header-logo {
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  header .header-logo img {
+    width: 300px;
+  }
+  header .header-menu ul {
+    grid-template-columns: auto auto auto auto auto;
+    padding-top: 150px;
+    padding-right: 35px;
+  }
+  header .header-menu ul a {
+    font-size: 29px;
+  }
+  footer .footer-logo img {
+    width: 220px;
+    padding-top: 30px;
+  }
+  footer .footer-enlaces img {
+    width: 40px;
+    padding-top: 21px;
+  }
+  .index main {
+    grid-template-areas: "enlaces" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 7, auto;
+  }
+  .index main p {
+    line-height: 46px;
+    font-size: 34px;
+  }
+  .index main h1 a {
+    font-size: 46px;
+  }
+  .index main h2 a {
+    padding-bottom: 15px;
+    font-size: 46px;
+  }
+  .index main .vermas {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .index main .vermas a {
+    font-size: 32px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+  }
+  .index-enlaces {
+    grid-template-rows: auto auto;
+  }
+  .index-enlaces img {
+    width: 28px;
+  }
+  .index-enlaces a {
+    font-size: 28px;
+    padding: 20px;
+    padding-right: 15px;
+  }
+  .index-enlaces0 {
     padding-bottom: 0px;
   }
-  #contacto .header-menu ul a {
-    font-size: 16px;
+  .index-enlaces1 {
+    padding-top: 15px;
+  }
+  .index-enlaces2 {
+    padding-bottom: 30px;
+  }
+  .index-blog {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .index-blog h1 {
+    font-size: 36px;
+  }
+  .index-blog-content h3 {
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .index-blog-content p {
+    font-size: 24px;
+  }
+  .index-juegos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .index-juegos h2 {
+    font-size: 36px;
+  }
+  .index-juegos .index-juegos-content {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .index-juegos .index-juegos-content img {
+    width: 360px;
+  }
+  .index-miembros {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .index-miembros h2 {
+    font-size: 36px;
+  }
+  .index-miembros a {
+    text-align: center;
+  }
+  .index-miembros img {
+    width: 360px;
+  }
+  .index-miembros p {
+    font-size: 24px;
+  }
+  .index-contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .index-contacto h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+  .index-contacto p {
+    font-size: 26px;
+  }
+  .blog-main {
+    grid-template-areas: "aside1" "blogcontent" "aside2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .blog-main-content h1 {
+    font-size: 68px;
+    padding-left: 50px;
+  }
+  .juegos-main {
+    grid-template-areas: "juegoscontent";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .juegos-main-content h1 {
+    font-size: 68px;
+    padding-left: 50px;
+  }
+  .juegos-content a {
+    text-align: center;
+  }
+  .juegos-content img {
+    width: 620px;
+  }
+  .juegos-content p {
+    color: white;
+    padding-top: 15px;
+    padding-left: 55px;
+    padding-right: 0px;
+    line-height: 42px;
+    font-size: 30px;
+  }
+  .juegos-content-callisto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 25px;
+  }
+  .juegos-content-forspoken {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 25px;
+  }
+  .juegos-content-hifi {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 25px;
+  }
+  .juegos-content-deadspace {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 25px;
+  }
+  .miembros-main {
+    grid-template-areas: "miembroscontent";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .miembros-main-content h1 {
+    font-size: 68px;
+    padding-left: 50px;
+  }
+  .miembros-content a {
+    text-align: center;
+  }
+  .miembros-content img {
+    width: 420px;
+  }
+  .miembros-content p {
+    color: white;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 42px;
+    font-size: 30px;
+  }
+  .miembros-content .miembros-eufm {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 100px;
+  }
+  .miembros-content .miembros-dougan {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 100px;
+  }
+  .miembros-content .miembros-migli0 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 100px;
+  }
+  .contacto-main {
+    grid-template-areas: "concontent";
+    grid-template-columns: auto;
+  }
+  .contacto-main-content h1 {
+    font-size: 68px;
+    padding-left: 50px;
   }
 }
 .asideizq {
@@ -673,154 +865,4 @@ footer .footer-enlaces img {
   grid-area: aside2;
   background-image: url(../img/HL-DI2-Trine4-Under-02.jpg);
   background-repeat: repeat-y;
-  background-color: black;
-}
-
-.index {
-  display: grid;
-  grid-template-areas: "cabecera" "indexmain" "pie";
-  grid-template-rows: auto auto auto;
-}
-.index main {
-  grid-area: indexmain;
-  display: grid;
-  grid-template-areas: "aside1 enlaces aside2" "aside1 blog aside2" "aside1 juegos aside2" "aside1 miembros aside2" "aside1 contacto aside2";
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: repeat 5, auto;
-}
-.index main h1 a {
-  text-decoration: none;
-  color: white;
-}
-.index main h2 a {
-  text-decoration: none;
-  color: white;
-}
-.index main p {
-  line-height: 20px;
-  text-align: justify;
-}
-.index main .index-enlaces {
-  grid-area: enlaces;
-  background-color: rgb(8, 13, 63);
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.index main .index-enlaces a {
-  color: white;
-  text-decoration: none;
-}
-.index main .index-enlaces1 {
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 10px;
-}
-.index main .index-enlaces2 {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 25px;
-}
-.index main .index-blog {
-  grid-area: blog;
-  background-color: rgb(1, 1, 34);
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-  padding: 25px;
-}
-.index main .index-blog-content {
-  padding-right: 50px;
-}
-.index main .index-blog-content h3 {
-  padding-bottom: 10px;
-}
-.index main .index-blog-content p {
-  padding-left: 20px;
-}
-.index main .index-blog-content .vermas {
-  text-align: end;
-}
-.index main .index-blog-content .vermas a {
-  padding-top: 20px;
-  font-size: 18px;
-  color: white;
-}
-.index main .index-juegos {
-  grid-area: juegos;
-  background-color: rgb(23, 5, 39);
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-  padding: 25px;
-}
-.index main .index-juegos-layout {
-  display: grid;
-  grid-template-rows: auto auto;
-}
-.index main .index-juegos-layout .vermas {
-  text-align: end;
-  padding-right: 20px;
-}
-.index main .index-juegos-layout .vermas a {
-  padding-top: 20px;
-  font-size: 18px;
-  color: white;
-}
-.index main .index-juegos-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.index main .index-juegos-content img {
-  width: 240px;
-  margin: 20px;
-  box-shadow: 3px 3px 10px gray;
-  border-radius: 10px;
-}
-.index main .index-miembros {
-  grid-area: miembros;
-  background-color: rgb(1, 1, 34);
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 7fr 1fr;
-  padding: 25px;
-}
-.index main .index-miembros h2 {
-  padding-top: 30px;
-  padding-right: 20px;
-}
-.index main .index-miembros img {
-  width: 130px;
-}
-.index main .index-miembros p {
-  padding-bottom: 10px;
-}
-.index main .index-miembros .miembros-descrip {
-  display: grid;
-  grid-template-rows: auto auto;
-}
-.index main .index-miembros .vermas {
-  text-align: end;
-}
-.index main .index-miembros .vermas a {
-  padding-top: 20px;
-  font-size: 18px;
-  color: white;
-}
-.index main .index-contacto {
-  grid-area: contacto;
-  background-color: rgb(8, 13, 63);
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 6fr 2fr;
-  padding: 25px;
-}
-.index main .index-contacto h2 {
-  padding-right: 15px;
-}
-.index main .index-contacto p {
-  padding-right: 40px;
-  padding-left: 20px;
-}
-.index main .index-contacto p a {
-  color: white;
 }/*# sourceMappingURL=main.css.map */
