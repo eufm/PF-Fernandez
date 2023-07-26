@@ -26,10 +26,10 @@
             }
         }
         .header-menu ul{
-            grid-template-columns: auto auto auto auto auto;
-            padding: 30px;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 10px;
             a{
-                font-size: 29px;
+                font-size: 18px;
             }
         }
     }
@@ -267,5 +267,23 @@
         grid-template-areas:
             "concontent";
         grid-template-columns: auto;
+    }
+
+    //The Callisto Protocol
+    .juegos-main-callisto{
+        grid-template-columns:1fr;
+        grid-template-rows: auto, auto;
+        padding:0px 50px;
+        .callisto-indice{
+            background-color: black;
+            position:sticky;
+            top:0;
+            ul{
+                padding-left: 0;
+                padding-top:25px;
+                display:grid;
+                grid-template-columns:auto auto auto;
+            }
+        }
     }
 }
