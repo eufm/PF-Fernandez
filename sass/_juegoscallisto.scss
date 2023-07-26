@@ -1,0 +1,113 @@
+.juegos-callisto-layout{
+    display:grid;
+    grid-template-areas:
+    "cabecera"
+    "callistomain"
+    "pie";
+}
+
+.juegos-main-callisto{
+    background-color: black;
+    grid-area:callistomain;
+    display:grid;
+    grid-template-columns:2fr 5fr 2fr;
+    h1{
+        color:white;
+        font-size:32px;
+        text-align:center;
+        padding-bottom:25px;
+    }
+    h2{
+        color:white;
+        font-size:32px;
+    }
+    h3{
+        color:white;
+        font-size:18px;
+    }
+    p{
+        font-family: 'Inter', sans-seriff;
+        color:white;
+        font-size:24px;
+        line-height:36px;
+        text-align: justify;
+        padding:5px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .callisto-indice ul{
+        list-style:none;
+        position:sticky;
+        top:0;
+        padding-left:75px;
+        padding-top:100px;
+        li{
+            padding-bottom:10px;
+        }
+        a{
+            font-size:21px;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+    }
+}
+
+.callisto-articles{
+    //background-color: rgb(65, 0, 65);
+    background-color: black;
+    .callisto-portada{
+        display:grid;
+        justify-items: center;
+        background-image: url(../img/callisto-fondo-portada.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        img{
+            width:580px;
+            padding-top:200px;
+            padding-bottom:25px;
+        }
+        h3{
+            font-size:28px;
+            padding-bottom:1000px;
+        }
+    }
+    .creditoslog{
+        display:grid;
+        justify-items:center;
+        border-style:solid;
+        //border-color:yellow;
+        //border-width: 5px;
+        p{
+            text-align:center;
+            padding-left:300px;
+            padding-right:300px;
+        }
+        img{
+            width:280px;
+            padding-top:25px;
+            padding-bottom:600px;
+        }
+    }
+    .callisto-creditos{
+        .callisto-logos01{
+            display:grid;
+            justify-items:center;
+            padding-bottom:500px;
+            img{
+                width:580px;
+                padding-top:200px;
+                padding-bottom:800px;
+            }
+        }
+        .callisto-logos02{
+            background-image: url(../img/callisto-fondo-creditos.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            img{
+                width:auto;
+                padding-bottom:1500px;
+            }
+        }
+    }
+}

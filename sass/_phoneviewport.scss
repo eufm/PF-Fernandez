@@ -14,7 +14,7 @@
     }
 
     //header
-    header {
+    header{
         grid-template-columns: auto;
         grid-template-rows:auto auto;
         .header-logo {
@@ -22,14 +22,14 @@
             padding-bottom:0px;
             padding-right:0px;
             img{
-                width: 250px;
+                width: 300px;
             }
         }
         .header-menu ul{
             grid-template-columns: auto auto auto auto auto;
-            padding:30px;
+            padding: 30px;
             a{
-                font-size: 26px;
+                font-size: 29px;
             }
         }
     }
@@ -50,14 +50,14 @@
     .index {
         main {
             grid-template-areas:
-                "enlaces"
+                "portada"
                 "blog"
                 "aside1"
                 "juegos"
                 "aside2"
                 "miembros"
                 "contacto";
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-template-rows: repeat (7, auto);
             p{
                 line-height:32px;
@@ -81,8 +81,11 @@
             }
         }
     }
-
-    .index-enlaces{
+    .index header{
+        position: static;
+        top:0;
+    }
+    .index-portada-enlaces{
         grid-template-rows:auto auto;
         img{
             width:22px;

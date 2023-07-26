@@ -15,7 +15,7 @@
 @import 'pagecontacto';
 
 //juegos
-@import 'juegocallisto';
+@import 'juegoscallisto';
 
 //queries
 @import 'phoneviewport';
@@ -24,13 +24,20 @@
 //aside1
 .asideizq {
     grid-area: aside1;
-    background-image: $fondobannerizq;
-    background-repeat: repeat-y;
+    background-color: black;
+    img{
+        position:sticky;
+        top:80px;
+        overflow: hidden;
+    }
 }
 
 //aside2
 .asideder{
     grid-area: aside2;
-    background-image: $fondobannerder;
-    background-repeat: repeat-y;
+    background-color: black;
+    img{
+        position:sticky;
+        top:80px;
+    }
 }
