@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   border: 0;
@@ -10,6 +11,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr;
   background-image: url("../img/fondo.png");
+  background-size: cover;
 }
 header .header-logo {
   text-align: end;
@@ -66,12 +68,12 @@ footer .footer-enlaces img {
 .index {
   display: grid;
   grid-template-areas: "cabecera" "indexmain" "pie";
-  grid-template-rows: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
 }
 .index main {
   grid-area: indexmain;
   display: grid;
-  grid-template-areas: "aside1 portada aside2" "aside1 blog aside2" "aside1 juegos aside2" "aside1 miembros aside2" "aside1 contacto aside2";
+  grid-template-areas: "aside1 enlaces aside2" "aside1 blog aside2" "aside1 juegos aside2" "aside1 miembros aside2" "aside1 contacto aside2";
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: repeat 5, auto;
 }
@@ -91,40 +93,38 @@ footer .footer-enlaces img {
   text-align: justify;
 }
 
-.index-portada {
-  grid-area: portada;
+.index-enlaces {
+  grid-area: enlaces;
   background-color: rgb(8, 13, 63);
-  display: grid;
-  grid-template-rows: auto auto;
-}
-
-.index-portada-enlaces {
   display: grid;
   grid-template-rows: auto auto auto;
 }
-.index-portada-enlaces img {
+.index-enlaces img {
   width: 23px;
   padding-left: 15px;
 }
-.index-portada-enlaces a {
+.index-enlaces a {
   color: white;
   text-decoration: none;
   font-size: 21px;
 }
-.index-portada-enlaces .index-enlaces0 {
+.index-enlaces0 {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 5px;
 }
-.index-portada-enlaces .index-enlaces1 {
+.index-enlaces1 {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.index-portada-enlaces .index-enlaces2 {
+.index-enlaces2 {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 25px;
+}
+.index-enlaces-logos {
+  display: none;
 }
 
 .index-blog {
@@ -176,8 +176,8 @@ footer .footer-enlaces img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .index-juegos-layout .index-juegos-content img {
-  width: 240px;
-  margin: 20px;
+  max-width: 240px;
+  margin: 10px;
   box-shadow: 3px 3px 10px gray;
   border-radius: 10px;
 }
@@ -246,6 +246,7 @@ footer .footer-enlaces img {
 .blog {
   display: grid;
   grid-template-areas: "cabecera" "blogmain" "pie";
+  grid-template-rows: auto auto auto;
 }
 .blog-main {
   grid-area: blogmain;
@@ -270,6 +271,7 @@ footer .footer-enlaces img {
 .juegos {
   display: grid;
   grid-template-areas: "cabecera" "juegosmain" "pie";
+  grid-template-rows: auto auto auto;
 }
 
 .juegos-main {
@@ -323,6 +325,7 @@ footer .footer-enlaces img {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin: 50px;
+  align-content: center;
 }
 .juegos-content-forspoken {
   display: grid;
@@ -343,6 +346,7 @@ footer .footer-enlaces img {
 .miembros {
   display: grid;
   grid-template-areas: "cabecera" "miembrosmain" "pie";
+  grid-template-rows: auto auto auto;
 }
 .miembros-main {
   grid-area: miembrosmain;
@@ -391,6 +395,12 @@ footer .footer-enlaces img {
   margin: 50px;
 }
 
+.contacto {
+  display: grid;
+  grid-template-areas: "cabecera" "contactomain" "pie";
+  grid-template-rows: auto auto auto;
+}
+
 .contacto-main {
   grid-area: contactomain;
   display: grid;
@@ -416,6 +426,7 @@ footer .footer-enlaces img {
 .juegos-callisto-layout {
   display: grid;
   grid-template-areas: "cabecera" "callistomain" "pie";
+  grid-template-rows: auto auto auto;
 }
 
 .juegos-main-callisto {
@@ -473,7 +484,7 @@ footer .footer-enlaces img {
   justify-items: center;
   background-image: url(../img/callisto-fondo-portada.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .callisto-articles .callisto-portada img {
   width: 580px;
@@ -519,6 +530,330 @@ footer .footer-enlaces img {
   padding-bottom: 1500px;
 }
 
+.juegos-forspoken-layout {
+  display: grid;
+  grid-template-areas: "cabecera" "forspokenmain" "pie";
+  grid-template-rows: auto auto auto;
+}
+
+.juegos-main-forspoken {
+  background-color: black;
+  grid-area: forspokenmain;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+.juegos-main-forspoken h1 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.juegos-main-forspoken h2 {
+  color: white;
+  font-size: 32px;
+}
+.juegos-main-forspoken h3 {
+  color: white;
+  font-size: 18px;
+}
+.juegos-main-forspoken p {
+  font-family: "Inter", sans-seriff;
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.juegos-main-forspoken .forspoken-indice ul {
+  list-style: none;
+  position: sticky;
+  top: 0;
+  padding-left: 75px;
+  padding-top: 100px;
+}
+.juegos-main-forspoken .forspoken-indice ul li {
+  padding-bottom: 10px;
+}
+.juegos-main-forspoken .forspoken-indice ul a {
+  font-size: 21px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forspoken-articles {
+  background-color: black;
+}
+.forspoken-articles .forspoken-portada {
+  display: grid;
+  justify-items: center;
+  background-image: url(../img/callisto-fondo-portada.png);
+  background-repeat: no-repeat;
+  background-size: content;
+  background: linear-gradient(180º, transparent 0%, black 100%);
+}
+.forspoken-articles .forspoken-portada img {
+  width: 580px;
+  padding-top: 200px;
+  padding-bottom: 25px;
+}
+.forspoken-articles .forspoken-portada h3 {
+  font-size: 28px;
+  padding-bottom: 1000px;
+}
+.forspoken-articles .creditoslog {
+  display: grid;
+  justify-items: center;
+  border-style: solid;
+}
+.forspoken-articles .creditoslog p {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.forspoken-articles .creditoslog img {
+  width: 280px;
+  padding-top: 25px;
+  padding-bottom: 600px;
+}
+.forspoken-articles .forspoken-creditos .forspoken-logos01 {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 500px;
+}
+.forspoken-articles .forspoken-creditos .forspoken-logos01 img {
+  width: 10px;
+  padding-top: 200px;
+  padding-bottom: 800px;
+}
+.forspoken-articles .forspoken-creditos .forspoken-logos02 {
+  background-image: url(../img/callisto-fondo-creditos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.forspoken-articles .forspoken-creditos .forspoken-logos02 img {
+  width: auto;
+  padding-bottom: 1500px;
+}
+
+.juegos-hifi-layout {
+  display: grid;
+  grid-template-areas: "cabecera" "hifimain" "pie";
+  grid-template-rows: auto auto auto;
+}
+
+.juegos-main-hifi {
+  background-color: black;
+  grid-area: hifimain;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+.juegos-main-hifi h1 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.juegos-main-hifi h2 {
+  color: white;
+  font-size: 32px;
+}
+.juegos-main-hifi h3 {
+  color: white;
+  font-size: 18px;
+}
+.juegos-main-hifi p {
+  font-family: "Inter", sans-seriff;
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.juegos-main-hifi .hifi-indice ul {
+  list-style: none;
+  position: sticky;
+  top: 0;
+  padding-left: 75px;
+  padding-top: 100px;
+}
+.juegos-main-hifi .hifi-indice ul li {
+  padding-bottom: 10px;
+}
+.juegos-main-hifi .hifi-indice ul a {
+  font-size: 21px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hifi-articles {
+  background-color: black;
+}
+.hifi-articles .hifi-portada {
+  display: grid;
+  justify-items: center;
+  background-image: url(../img/callisto-fondo-portada.png);
+  background-repeat: no-repeat;
+  background-size: content;
+  background: linear-gradient(180º, transparent 0%, black 100%);
+}
+.hifi-articles .hifi-portada img {
+  width: 580px;
+  padding-top: 200px;
+  padding-bottom: 25px;
+}
+.hifi-articles .hifi-portada h3 {
+  font-size: 28px;
+  padding-bottom: 1000px;
+}
+.hifi-articles .creditoslog {
+  display: grid;
+  justify-items: center;
+  border-style: solid;
+}
+.hifi-articles .creditoslog p {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.hifi-articles .creditoslog img {
+  width: 280px;
+  padding-top: 25px;
+  padding-bottom: 600px;
+}
+.hifi-articles .hifi-creditos .hifi-logos01 {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 500px;
+}
+.hifi-articles .hifi-creditos .hifi-logos01 img {
+  width: 10px;
+  padding-top: 200px;
+  padding-bottom: 800px;
+}
+.hifi-articles .hifi-creditos .hifi-logos02 {
+  background-image: url(../img/callisto-fondo-creditos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hifi-articles .hifi-creditos .hifi-logos02 img {
+  width: auto;
+  padding-bottom: 1500px;
+}
+
+.juegos-ds-layout {
+  display: grid;
+  grid-template-areas: "cabecera" "dsmain" "pie";
+  grid-template-rows: auto auto auto;
+}
+
+.juegos-main-ds {
+  background-color: black;
+  grid-area: dsmain;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+.juegos-main-ds h1 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.juegos-main-ds h2 {
+  color: white;
+  font-size: 32px;
+}
+.juegos-main-ds h3 {
+  color: white;
+  font-size: 18px;
+}
+.juegos-main-ds p {
+  font-family: "Inter", sans-seriff;
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.juegos-main-ds .ds-indice ul {
+  list-style: none;
+  position: sticky;
+  top: 0;
+  padding-left: 75px;
+  padding-top: 100px;
+}
+.juegos-main-ds .ds-indice ul li {
+  padding-bottom: 10px;
+}
+.juegos-main-ds .ds-indice ul a {
+  font-size: 21px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ds-articles {
+  background-color: black;
+}
+.ds-articles .ds-portada {
+  display: grid;
+  justify-items: center;
+  background-image: url(../img/callisto-fondo-portada.png);
+  background-repeat: no-repeat;
+  background-size: content;
+  background: linear-gradient(180º, transparent 0%, black 100%);
+}
+.ds-articles .ds-portada img {
+  width: 580px;
+  padding-top: 200px;
+  padding-bottom: 25px;
+}
+.ds-articles .ds-portada h3 {
+  font-size: 28px;
+  padding-bottom: 1000px;
+}
+.ds-articles .creditoslog {
+  display: grid;
+  justify-items: center;
+  border-style: solid;
+}
+.ds-articles .creditoslog p {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.ds-articles .creditoslog img {
+  width: 280px;
+  padding-top: 25px;
+  padding-bottom: 600px;
+}
+.ds-articles .ds-creditos .ds-logos01 {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 500px;
+}
+.ds-articles .ds-creditos .ds-logos01 img {
+  width: 10px;
+  padding-top: 200px;
+  padding-bottom: 800px;
+}
+.ds-articles .ds-creditos .ds-logos02 {
+  background-image: url(../img/callisto-fondo-creditos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ds-articles .ds-creditos .ds-logos02 img {
+  width: auto;
+  padding-bottom: 1500px;
+}
+
 @media (max-width: 600px) {
   .asideizq {
     display: none;
@@ -545,11 +880,11 @@ footer .footer-enlaces img {
     width: 300px;
   }
   header .header-menu ul {
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     padding: 10px;
   }
   header .header-menu ul a {
-    font-size: 18px;
+    font-size: 20px;
   }
   footer .footer-logo img {
     width: 220px;
@@ -560,7 +895,7 @@ footer .footer-enlaces img {
     padding-top: 21px;
   }
   .index main {
-    grid-template-areas: "portada" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
+    grid-template-areas: "enlaces" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
     grid-template-columns: 100%;
     grid-template-rows: repeat 7, auto;
   }
@@ -584,27 +919,37 @@ footer .footer-enlaces img {
     padding-top: 200px;
     padding-bottom: 20px;
   }
-  .index header {
-    position: static;
-    top: 0;
+  .index-enlaces {
+    grid-template-rows: auto;
   }
-  .index-portada-enlaces {
-    grid-template-rows: auto auto;
+  .index-enlaces img {
+    width: 36px;
   }
-  .index-portada-enlaces img {
-    width: 22px;
-  }
-  .index-portada-enlaces a {
+  .index-enlaces a {
     font-size: 22px;
   }
-  .index-portada-enlaces0 {
-    padding-bottom: 0px;
+  .index-enlaces0 {
+    display: none;
+    padding: 10px 0px;
   }
-  .index-portada-enlaces1 {
-    padding-top: 15px;
+  .index-enlaces1 {
+    display: none;
+    padding: 0px;
   }
-  .index-portada-enlaces2 {
-    padding-bottom: 30px;
+  .index-enlaces1 a {
+    padding: 10px 0px;
+  }
+  .index-enlaces2 {
+    display: none;
+    padding: 0px;
+  }
+  .index-enlaces2 a {
+    padding: 10px 0px;
+  }
+  .index-enlaces-logos {
+    display: block;
+    text-align: center;
+    padding: 25px 0px;
   }
   .index-blog {
     grid-template-columns: 1fr;
@@ -612,6 +957,9 @@ footer .footer-enlaces img {
   }
   .index-blog h1 {
     font-size: 36px;
+  }
+  .index-blog-content {
+    padding-right: 0px;
   }
   .index-blog-content h3 {
     font-size: 26px;
@@ -629,11 +977,14 @@ footer .footer-enlaces img {
     font-size: 36px;
   }
   .index-juegos .index-juegos-content {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat 4, auto;
+  }
+  .index-juegos .index-juegos-content a {
+    text-align: center;
   }
   .index-juegos .index-juegos-content img {
-    width: 240px;
+    width: 320px;
   }
   .index-miembros {
     grid-template-columns: auto;
@@ -802,7 +1153,7 @@ footer .footer-enlaces img {
     padding-top: 21px;
   }
   .index main {
-    grid-template-areas: "portada" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
+    grid-template-areas: "enlaces" "blog" "aside1" "juegos" "aside2" "miembros" "contacto";
     grid-template-columns: 1fr;
     grid-template-rows: repeat 7, auto;
   }
@@ -826,28 +1177,24 @@ footer .footer-enlaces img {
     padding-top: 200px;
     padding-bottom: 20px;
   }
-  .index header {
-    position: static;
-    top: 0;
-  }
-  .index-portada-enlaces {
+  .index-enlaces {
     grid-template-rows: auto auto;
   }
-  .index-portada-enlaces img {
+  .index-enlaces img {
     width: 28px;
   }
-  .index-portada-enlaces a {
+  .index-enlaces a {
     font-size: 28px;
     padding: 20px;
     padding-right: 15px;
   }
-  .index-portada-enlaces0 {
+  .index-enlaces0 {
     padding-bottom: 0px;
   }
-  .index-portada-enlaces1 {
+  .index-enlaces1 {
     padding-top: 15px;
   }
-  .index-portada-enlaces2 {
+  .index-enlaces2 {
     padding-bottom: 30px;
   }
   .index-blog {
@@ -928,7 +1275,7 @@ footer .footer-enlaces img {
     text-align: center;
   }
   .juegos-content img {
-    width: 620px;
+    width: 560px;
   }
   .juegos-content p {
     color: white;

@@ -5,6 +5,7 @@
         "cabecera"
         "juegosmain"
         "pie";
+        grid-template-rows: auto auto auto;
 }
 .juegos-main{
     grid-area: juegosmain;
@@ -56,6 +57,7 @@
         display: grid;
         grid-template-columns: 1fr 5fr;
         margin: 50px;
+        align-content: center;
     }
     &-forspoken {
         display: grid;

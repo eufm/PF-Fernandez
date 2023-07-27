@@ -5,6 +5,7 @@
         "cabecera"
         "miembrosmain"
         "pie";
+        grid-template-rows: auto auto auto;
     &-main{
         grid-area:miembrosmain;
         display:grid;

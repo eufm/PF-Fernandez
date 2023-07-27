@@ -1,15 +1,15 @@
-.juegos-callisto-layout{
+.juegos-ds-layout{
     display:grid;
     grid-template-areas:
     "cabecera"
-    "callistomain"
+    "dsmain"
     "pie";
     grid-template-rows:auto auto auto;
 }
 
-.juegos-main-callisto{
+.juegos-main-ds{
     background-color: black;
-    grid-area:callistomain;
+    grid-area:dsmain;
     display:grid;
     grid-template-columns:2fr 5fr 2fr;
     h1{
@@ -36,7 +36,7 @@
         padding-top:10px;
         padding-bottom:10px;
     }
-    .callisto-indice ul{
+    .ds-indice ul{
         list-style:none;
         position:sticky;
         top:0;
@@ -54,15 +54,16 @@
     }
 }
 
-.callisto-articles{
+.ds-articles{
     //background-color: rgb(65, 0, 65);
     background-color: black;
-    .callisto-portada{
+    .ds-portada{
         display:grid;
         justify-items: center;
         background-image: url(../img/callisto-fondo-portada.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:content;
+        background: linear-gradient(180º, transparent 0%, black 100%);
         img{
             width:580px;
             padding-top:200px;
@@ -90,18 +91,18 @@
             padding-bottom:600px;
         }
     }
-    .callisto-creditos{
-        .callisto-logos01{
+    .ds-creditos{
+        .ds-logos01{
             display:grid;
             justify-items:center;
             padding-bottom:500px;
             img{
-                width:580px;
+                width:10px;
                 padding-top:200px;
                 padding-bottom:800px;
             }
         }
-        .callisto-logos02{
+        .ds-logos02{
             background-image: url(../img/callisto-fondo-creditos.png);
             background-repeat: no-repeat;
             background-size: contain;

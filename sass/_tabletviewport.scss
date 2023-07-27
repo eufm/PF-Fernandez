@@ -50,7 +50,7 @@
     .index {
         main {
             grid-template-areas:
-                "portada"
+                "enlaces"
                 "blog"
                 "aside1"
                 "juegos"
@@ -81,11 +81,7 @@
             }
         }
     }
-    .index header{
-        position: static;
-        top:0;
-    }
-    .index-portada-enlaces{
+    .index-enlaces{
         grid-template-rows:auto auto;
         img{
             width:28px;
@@ -202,7 +198,7 @@
             text-align: center;
         }
         img {
-            width:620px;
+            width:560px;
         }
         p{
             color:white;

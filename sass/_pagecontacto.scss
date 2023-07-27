@@ -1,4 +1,13 @@
 //Página Web Contacto
+.contacto{
+    display:grid;
+    grid-template-areas:
+        "cabecera"
+        "contactomain"
+        "pie";
+        grid-template-rows: auto auto auto;
+}
+
 .contacto-main{
     grid-area: contactomain;
     display: grid;

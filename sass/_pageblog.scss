@@ -5,6 +5,7 @@
         "cabecera"
         "blogmain"
         "pie";
+    grid-template-rows: auto auto auto;
     &-main{
         grid-area: blogmain;
         display: grid;

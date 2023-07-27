@@ -26,10 +26,10 @@
             }
         }
         .header-menu ul{
-            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-columns: auto auto auto auto auto;
             padding: 10px;
             a{
-                font-size: 18px;
+                font-size: 20px;
             }
         }
     }
@@ -50,7 +50,7 @@
     .index {
         main {
             grid-template-areas:
-                "portada"
+                "enlaces"
                 "blog"
                 "aside1"
                 "juegos"
@@ -81,26 +81,36 @@
             }
         }
     }
-    .index header{
-        position: static;
-        top:0;
-    }
-    .index-portada-enlaces{
-        grid-template-rows:auto auto;
+    .index-enlaces{
+        grid-template-rows:auto;
         img{
-            width:22px;
+            width: 36px;
         }
         a{
             font-size:22px;
         }
         &0 {
-            padding-bottom: 0px;
+            display:none;
+            padding: 10px 0px;
         }
         &1 {
-            padding-top:15px;
+            display:none;
+            padding:0px;
+            a{
+                padding:10px 0px;
+            }
         }
         &2 {
-            padding-bottom:30px;
+            display:none;
+            padding:0px;
+            a{
+                padding:10px 0px;
+            }
+        }
+        &-logos{
+            display:block;
+            text-align:center;
+            padding:25px 0px
         }
     }
 
@@ -111,6 +121,7 @@
             font-size: 36px;
         }
         &-content {
+            padding-right:0px;
             h3{
                 font-size:26px;
                 padding-top:25px;
@@ -129,10 +140,13 @@
             font-size:36px;
         }
         .index-juegos-content{
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
+            grid-template-columns: auto;
+            grid-template-rows: repeat (4, auto);
+            a{
+                text-align:center;
+            }
             img{
-                width: 240px;
+                width: 320px;
             }
         }
     }

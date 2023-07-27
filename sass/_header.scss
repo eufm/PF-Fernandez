@@ -4,6 +4,7 @@ header {
     display:grid;
     grid-template-columns: 1fr 3fr;
     background-image: $fondopersonal;
+    background-size: cover;
     .header-logo {
         text-align: end;
         padding-top:50px;
