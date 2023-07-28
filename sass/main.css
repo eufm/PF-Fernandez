@@ -861,7 +861,7 @@ footer .footer-enlaces img {
   padding-bottom: 1500px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .asideizq {
     display: none;
   }
@@ -888,10 +888,10 @@ footer .footer-enlaces img {
   }
   header .header-menu ul {
     grid-template-columns: auto auto auto auto auto;
-    padding: 30px;
+    padding: 15px;
   }
   header .header-menu ul a {
-    font-size: 18px;
+    font-size: 16px;
   }
   footer .footer-logo img {
     width: 220px;
@@ -991,7 +991,7 @@ footer .footer-enlaces img {
     text-align: center;
   }
   .index-juegos .index-juegos-content img {
-    width: 320px;
+    width: 260px;
   }
   .index-miembros {
     grid-template-columns: auto;
@@ -1160,7 +1160,7 @@ footer .footer-enlaces img {
     width: 360px;
   }
 }
-@media (min-width: 480px) and (max-width: 1300px) {
+@media (min-width: 500px) and (max-width: 1300px) {
   .asideizq {
     display: none;
   }
@@ -1323,7 +1323,7 @@ footer .footer-enlaces img {
     text-align: center;
   }
   .juegos-content img {
-    width: 560px;
+    width: 440px;
   }
   .juegos-content p {
     color: white;
@@ -1358,15 +1358,18 @@ footer .footer-enlaces img {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
+  .miembros-main-content {
+    text-align: center;
+  }
   .miembros-main-content h1 {
-    font-size: 68px;
-    padding-left: 50px;
+    font-size: 50px;
+    padding-left: 0px;
   }
   .miembros-content a {
     text-align: center;
   }
   .miembros-content img {
-    width: 420px;
+    width: 280px;
   }
   .miembros-content p {
     color: white;
@@ -1417,7 +1420,7 @@ footer .footer-enlaces img {
     grid-template-columns: auto auto auto;
   }
 }
-@media (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 800px) {
   .index-enlaces {
     grid-template-rows: auto;
   }
@@ -1451,7 +1454,7 @@ footer .footer-enlaces img {
     padding: 25px 0px;
   }
 }
-@media (min-width: 480px) and (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 600px) {
   .index-juegos {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;

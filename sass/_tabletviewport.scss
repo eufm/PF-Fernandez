@@ -198,7 +198,7 @@
             text-align: center;
         }
         img {
-            width:560px;
+            width:440px;
         }
         p{
             color:white;
@@ -237,9 +237,10 @@
         grid-template-columns:auto;
         grid-template-rows:auto;
         &-content{
+            text-align:center;
             h1{
-                font-size:68px;
-                padding-left:50px;
+                font-size:50px;
+                padding-left:0px;
             }
         }
     }
@@ -249,7 +250,7 @@
             text-align: center;
         }
         img{
-            width:420px;
+            width:280px;
         }
         p{
             color:white;
