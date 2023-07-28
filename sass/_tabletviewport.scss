@@ -28,7 +28,7 @@
             grid-template-columns: auto auto auto auto auto;
             padding: 30px;
             a{
-                font-size: 29px;
+                font-size: 24px;
             }
         }
     }
@@ -287,6 +287,77 @@
             h1{
                 font-size: 68px;
                 padding-left:50px;
+            }
+        }
+    }
+    //The Callisto Protocol
+    .juegos-main-callisto{
+        grid-template-columns:1fr;
+        grid-template-rows: auto, auto;
+        p{
+            padding:20px 40px;
+        }
+        .callisto-indice{
+            text-align:center;
+            padding:10px 10px;
+            ul{
+                padding-left: 0;
+                padding-top:25px;
+                display:grid;
+                grid-template-columns:auto auto auto;
+            }
+        }
+    }
+}
+@media (min-width: $phonedim) and (max-width:800px) {
+    .index-enlaces{
+        grid-template-rows:auto;
+        img{
+            width: 36px;
+        }
+        a{
+            font-size:22px;
+        }
+        &0 {
+            display:none;
+            padding: 10px 0px;
+        }
+        &1 {
+            display:none;
+            padding:0px;
+            a{
+                padding:10px 0px;
+            }
+        }
+        &2 {
+            display:none;
+            padding:0px;
+            a{
+                padding:10px 0px;
+            }
+        }
+        &-logos{
+            display:block;
+            text-align:center;
+            padding:25px 0px
+        }
+    }
+}
+@media (min-width: $phonedim) and (max-width:600px) {
+    .index-juegos{
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        h2{
+            font-size:36px;
+        }
+        .index-juegos-content{
+            grid-template-columns: auto;
+            grid-template-rows: repeat (4, auto);
+            a{
+                text-align:center;
+            }
+            img{
+                width: 2000px;
             }
         }
     }

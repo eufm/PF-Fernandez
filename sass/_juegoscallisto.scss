@@ -14,13 +14,14 @@
     grid-template-columns:2fr 5fr 2fr;
     h1{
         color:white;
-        font-size:32px;
+        font-size:36px;
         text-align:center;
         padding-bottom:25px;
     }
     h2{
         color:white;
-        font-size:32px;
+        text-align:center;
+        font-size:36px;
     }
     h3{
         color:white;
@@ -29,27 +30,33 @@
     p{
         font-family: 'Inter', sans-seriff;
         color:white;
-        font-size:24px;
-        line-height:36px;
+        font-size:28px;
+        line-height:40px;
         text-align: justify;
         padding:5px;
         padding-top:10px;
         padding-bottom:10px;
     }
-    .callisto-indice ul{
-        list-style:none;
+    .callisto-indice {
+        background-color: black;
         position:sticky;
         top:0;
-        padding-left:75px;
-        padding-top:100px;
-        li{
-            padding-bottom:10px;
-        }
-        a{
-            font-size:21px;
-            color:white;
-            text-decoration:none;
-            font-weight:bold;
+        text-align:left;
+        ul{
+            position:sticky;
+            top:0;
+            list-style:none;
+            padding-left:75px;
+            padding-top:100px;
+            li{
+                padding-bottom:10px;
+            }
+            a{
+                font-size:21px;
+                color:white;
+                text-decoration:none;
+                font-weight:bold;
+            }
         }
     }
 }
@@ -77,8 +84,6 @@
         display:grid;
         justify-items:center;
         border-style:solid;
-        //border-color:yellow;
-        //border-width: 5px;
         p{
             text-align:center;
             padding-left:300px;
@@ -104,9 +109,10 @@
         .callisto-logos02{
             background-image: url(../img/callisto-fondo-creditos.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
+            text-align:center;
             img{
-                width:auto;
+                width:860px;
                 padding-bottom:1500px;
             }
         }

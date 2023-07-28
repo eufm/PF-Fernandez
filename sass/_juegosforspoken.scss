@@ -60,7 +60,7 @@
     .forspoken-portada{
         display:grid;
         justify-items: center;
-        background-image: url(../img/callisto-fondo-portada.png);
+        //background-image: url(../img/callisto-fondo-portada.png);
         background-repeat: no-repeat;
         background-size:content;
         background: linear-gradient(180º, transparent 0%, black 100%);
@@ -107,7 +107,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             img{
-                width:auto;
+                width:120px;
                 padding-bottom:1500px;
             }
         }
