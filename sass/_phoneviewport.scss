@@ -59,21 +59,23 @@
             grid-template-columns: 100%;
             grid-template-rows: repeat (7, auto);
             p{
-                line-height:32px;
-                font-size:24px;
+                line-height:26px;
+                font-size:20px;
             }
             h1 a{
-                font-size:32px;
+                font-size:28px;
+            }
+            h2{
+                padding-bottom:15px;
             }
             h2 a{
-                padding-bottom: 15px;
-                font-size:32px;
+                font-size:28px;
             }
             .vermas{
-                padding-top:20px;
+                padding-top:10px;
                 padding-bottom:20px;
                 a{
-                    font-size:25px;
+                    font-size:21px;
                     padding-top:200px;
                     padding-bottom:20px;
                 }
@@ -116,18 +118,12 @@
     .index-blog {
         grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        h1 {
-            font-size: 36px;
-        }
         &-content {
             padding-right:0px;
             h3{
-                font-size:26px;
-                padding-top:25px;
-                padding-bottom:25px;
-            }
-            p{
-                font-size:24px;
+                font-size:22px;
+                padding-top:20px;
+                padding-bottom:15px;
             }
         }
     }
@@ -135,9 +131,6 @@
     .index-juegos{
         grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        h2{
-            font-size:36px;
-        }
         .index-juegos-content{
             grid-template-columns: auto;
             grid-template-rows: repeat (4, auto);
@@ -153,30 +146,17 @@
     .index-miembros{
         grid-template-columns:auto;
         grid-template-rows: auto auto auto;
-        h2{
-            font-size: 36px;
-        }
         a{
             text-align: center;
         }
         img{
             width: 210px;
         }
-        p{
-            font-size: 24px;
-        }
     }
 
     .index-contacto{
         grid-template-columns:1fr;
         grid-template-rows: auto auto;
-        h2{
-            font-size:36px;
-            padding-bottom:10px;
-        }
-        p{
-            font-size: 26px;
-        }
     }
 
     //Página Web Blog
@@ -293,9 +273,9 @@
             font-size:28px;
         }
         p{
-            padding:20px 40px;
-            font-size:26px;
-            line-height:34px;
+            padding:10px 10px;
+            font-size:18px;
+            line-height:26px;
         }
         .callisto-indice{
             text-align:center;
@@ -324,8 +304,9 @@
         }
         .creditoslog{
             p{
-                padding-left:25px;
-                padding-right:25px;
+                padding:15px 60px;
+                font-size:22px;
+                line-height:30px;
             }
             img{
                 width:280px;
