@@ -460,23 +460,26 @@ footer .footer-enlaces img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.juegos-main-callisto .callisto-indice {
+.juegos-main-callisto .callisto-indice-phone {
+  display: none;
+}
+.juegos-main-callisto .callisto-indice-desktop {
   background-color: black;
   position: sticky;
   top: 0;
   text-align: left;
 }
-.juegos-main-callisto .callisto-indice ul {
+.juegos-main-callisto .callisto-indice-desktop ul {
   position: sticky;
   top: 0;
   list-style: none;
   padding-left: 75px;
   padding-top: 100px;
 }
-.juegos-main-callisto .callisto-indice ul li {
+.juegos-main-callisto .callisto-indice-desktop ul li {
   padding-bottom: 10px;
 }
-.juegos-main-callisto .callisto-indice ul a {
+.juegos-main-callisto .callisto-indice-desktop ul a {
   font-size: 21px;
   color: white;
   text-decoration: none;
@@ -489,9 +492,9 @@ footer .footer-enlaces img {
 .callisto-articles .callisto-portada {
   display: grid;
   justify-items: center;
-  background-image: url(../img/callisto-fondo-portada.png);
+  background-image: url(../img/callisto-fondo-portada.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .callisto-articles .callisto-portada img {
   width: 580px;
@@ -528,14 +531,18 @@ footer .footer-enlaces img {
   padding-bottom: 800px;
 }
 .callisto-articles .callisto-creditos .callisto-logos02 {
-  background-image: url(../img/callisto-fondo-creditos.png);
+  background-image: url(../img/callisto-fondo-creditos.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   text-align: center;
 }
 .callisto-articles .callisto-creditos .callisto-logos02 img {
   width: 860px;
   padding-bottom: 1500px;
+}
+.callisto-articles #callisto-intro img {
+  /*background-image:content;*/
+  width: 100%;
 }
 
 .juegos-forspoken-layout {
@@ -552,13 +559,14 @@ footer .footer-enlaces img {
 }
 .juegos-main-forspoken h1 {
   color: white;
-  font-size: 32px;
+  font-size: 36px;
   text-align: center;
   padding-bottom: 25px;
 }
 .juegos-main-forspoken h2 {
   color: white;
-  font-size: 32px;
+  text-align: center;
+  font-size: 36px;
 }
 .juegos-main-forspoken h3 {
   color: white;
@@ -567,8 +575,8 @@ footer .footer-enlaces img {
 .juegos-main-forspoken p {
   font-family: "Inter", sans-seriff;
   color: white;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 40px;
   text-align: justify;
   padding: 5px;
   padding-top: 10px;
@@ -597,9 +605,9 @@ footer .footer-enlaces img {
 .forspoken-articles .forspoken-portada {
   display: grid;
   justify-items: center;
+  background-image: url(../img/forspoken-fondo-portada.jpg);
   background-repeat: no-repeat;
-  background-size: content;
-  background: linear-gradient(180º, transparent 0%, black 100%);
+  background-size: contain;
 }
 .forspoken-articles .forspoken-portada img {
   width: 580px;
@@ -631,17 +639,18 @@ footer .footer-enlaces img {
   padding-bottom: 500px;
 }
 .forspoken-articles .forspoken-creditos .forspoken-logos01 img {
-  width: 10px;
+  width: 580px;
   padding-top: 200px;
   padding-bottom: 800px;
 }
 .forspoken-articles .forspoken-creditos .forspoken-logos02 {
-  background-image: url(../img/callisto-fondo-creditos.png);
+  background-image: url(../img/forspoken-fondo-creditos.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
 }
 .forspoken-articles .forspoken-creditos .forspoken-logos02 img {
-  width: 120px;
+  width: 860px;
   padding-bottom: 1500px;
 }
 
@@ -1021,8 +1030,8 @@ footer .footer-enlaces img {
     padding-top: 15px;
     padding-left: 0px;
     padding-right: 0px;
-    line-height: 32px;
-    font-size: 21px;
+    line-height: 26px;
+    font-size: 16px;
   }
   .juegos-content-callisto {
     grid-template-columns: 1fr;
@@ -1086,6 +1095,24 @@ footer .footer-enlaces img {
     grid-template-columns: 1fr;
     grid-template-rows: auto, auto;
   }
+  .juegos-main-callisto .callisto-indice-phone {
+    display: block;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    text-align: center;
+  }
+  .juegos-main-callisto .callisto-indice-phone ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px 0px;
+  }
+  .juegos-main-callisto .callisto-indice-phone ul a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
   .juegos-main-callisto h1 {
     font-size: 28px;
   }
@@ -1094,25 +1121,15 @@ footer .footer-enlaces img {
   }
   .juegos-main-callisto p {
     padding: 10px 10px;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 26px;
   }
-  .juegos-main-callisto .callisto-indice {
-    text-align: center;
-    padding: 10px 10px;
-  }
-  .juegos-main-callisto .callisto-indice ul {
-    padding-left: 0;
-    padding-top: 10px;
-  }
-  .juegos-main-callisto .callisto-indice ul li {
-    padding: 5px;
-  }
-  .juegos-main-callisto .callisto-indice ul a {
-    font-size: 18px;
+  .juegos-main-callisto .callisto-indice-desktop {
+    display: none;
   }
   .callisto-articles .callisto-portada {
     background-position: center;
+    background-size: cover;
   }
   .callisto-articles .callisto-portada img {
     width: 320px;
@@ -1131,14 +1148,14 @@ footer .footer-enlaces img {
     padding-bottom: 600px;
   }
   .callisto-articles .callisto-creditos .callisto-logos01 img {
-    width: 360px;
+    width: 320px;
   }
   .callisto-articles .callisto-creditos .callisto-logos02 {
     background-size: 250%;
     background-position: center;
   }
   .callisto-articles .callisto-creditos .callisto-logos02 img {
-    width: 360px;
+    width: 320px;
   }
 }
 @media (min-width: 500px) and (max-width: 1300px) {

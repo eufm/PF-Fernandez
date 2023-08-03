@@ -188,8 +188,8 @@
             padding-top:15px;
             padding-left:0px;
             padding-right:0px;
-            line-height: 32px;
-            font-size:21px;
+            line-height: 26px;
+            font-size:16px;
         }
         &-callisto{
             grid-template-columns:1fr;
@@ -266,6 +266,24 @@
     .juegos-main-callisto{
         grid-template-columns:1fr;
         grid-template-rows: auto, auto;
+        .callisto-indice-phone{
+            display:block;
+            background-color: black;
+            position:sticky;
+            top:0;
+            text-align:center;
+            ul{
+                display:grid;
+                grid-template-columns:auto auto auto;
+                padding:5px 0px;
+                a{
+                    font-size:16px;
+                    color:white;
+                    text-decoration:none;
+                    font-weight:bold;
+                }
+            }
+        }
         h1{
             font-size:28px;
         }
@@ -274,27 +292,17 @@
         }
         p{
             padding:10px 10px;
-            font-size:18px;
+            font-size:19px;
             line-height:26px;
         }
-        .callisto-indice{
-            text-align:center;
-            padding:10px 10px;
-            ul{
-                padding-left: 0;
-                padding-top:10px;
-                li{
-                    padding:5px;
-                }
-                a{
-                    font-size:18px;
-                }
-            }
+        .callisto-indice-desktop{
+            display:none;
         }
     }
     .callisto-articles{
         .callisto-portada{
             background-position:center;
+            background-size: cover;
             img{
                 width:320px;
             }
@@ -317,14 +325,14 @@
         .callisto-creditos{
             .callisto-logos01{
                 img{
-                    width:360px;
+                    width:320px;
                 }
             }
             .callisto-logos02{
                 background-size:250%;
                 background-position:center;
                 img{
-                    width:360px;
+                    width:320px;
                 }
             }
         }

@@ -14,13 +14,14 @@
     grid-template-columns:2fr 5fr 2fr;
     h1{
         color:white;
-        font-size:32px;
+        font-size:36px;
         text-align:center;
         padding-bottom:25px;
     }
     h2{
         color:white;
-        font-size:32px;
+        text-align:center;
+        font-size:36px;
     }
     h3{
         color:white;
@@ -29,8 +30,8 @@
     p{
         font-family: 'Inter', sans-seriff;
         color:white;
-        font-size:24px;
-        line-height:36px;
+        font-size:28px;
+        line-height:40px;
         text-align: justify;
         padding:5px;
         padding-top:10px;
@@ -55,15 +56,13 @@
 }
 
 .forspoken-articles{
-    //background-color: rgb(65, 0, 65);
     background-color: black;
     .forspoken-portada{
         display:grid;
         justify-items: center;
-        //background-image: url(../img/callisto-fondo-portada.png);
+        background-image: url(../img/forspoken-fondo-portada.jpg);
         background-repeat: no-repeat;
-        background-size:content;
-        background: linear-gradient(180º, transparent 0%, black 100%);
+        background-size:contain;
         img{
             width:580px;
             padding-top:200px;
@@ -78,8 +77,6 @@
         display:grid;
         justify-items:center;
         border-style:solid;
-        //border-color:yellow;
-        //border-width: 5px;
         p{
             text-align:center;
             padding-left:300px;
@@ -97,17 +94,18 @@
             justify-items:center;
             padding-bottom:500px;
             img{
-                width:10px;
+                width:580px;
                 padding-top:200px;
                 padding-bottom:800px;
             }
         }
         .forspoken-logos02{
-            background-image: url(../img/callisto-fondo-creditos.png);
+            background-image: url(../img/forspoken-fondo-creditos.jpg);
             background-repeat: no-repeat;
             background-size: contain;
+            text-align:center;
             img{
-                width:120px;
+                width:860px;
                 padding-bottom:1500px;
             }
         }

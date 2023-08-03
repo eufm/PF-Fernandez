@@ -37,7 +37,10 @@
         padding-top:10px;
         padding-bottom:10px;
     }
-    .callisto-indice {
+    .callisto-indice-phone{
+        display:none;
+    }
+    .callisto-indice-desktop {
         background-color: black;
         position:sticky;
         top:0;
@@ -62,14 +65,13 @@
 }
 
 .callisto-articles{
-    //background-color: rgb(65, 0, 65);
     background-color: black;
     .callisto-portada{
         display:grid;
         justify-items: center;
-        background-image: url(../img/callisto-fondo-portada.png);
+        background-image: url(../img/callisto-fondo-portada.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         img{
             width:580px;
             padding-top:200px;
@@ -107,14 +109,20 @@
             }
         }
         .callisto-logos02{
-            background-image: url(../img/callisto-fondo-creditos.png);
+            background-image: url(../img/callisto-fondo-creditos.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             text-align:center;
             img{
                 width:860px;
                 padding-bottom:1500px;
             }
+        }
+    }
+    #callisto-intro{
+        img{
+            /*background-image:content;*/
+            width:100%;
         }
     }
 }
