@@ -1097,21 +1097,25 @@ footer .footer-enlaces img {
   }
   .juegos-main-callisto .callisto-indice-phone {
     display: block;
-    background-color: black;
+    text-align: center;
     position: sticky;
     top: 0;
-    text-align: center;
   }
-  .juegos-main-callisto .callisto-indice-phone ul {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 5px 0px;
+  .juegos-main-callisto .callisto-indice-phone .navbar {
+    background-color: black;
   }
-  .juegos-main-callisto .callisto-indice-phone ul a {
-    font-size: 16px;
+  .juegos-main-callisto .callisto-indice-phone .navbar .offcanvas {
+    background-color: black;
+  }
+  .juegos-main-callisto .callisto-indice-phone .navbar .offcanvas .offcanvas-header {
     color: white;
-    text-decoration: none;
+    border-bottom: 2px solid white;
+  }
+  .juegos-main-callisto .callisto-indice-phone .navbar .offcanvas .offcanvas-body ul a {
+    font-size: 18px;
+    color: white;
     font-weight: bold;
+    padding: 5px 0px;
   }
   .juegos-main-callisto h1 {
     font-size: 28px;

@@ -268,19 +268,23 @@
         grid-template-rows: auto, auto;
         .callisto-indice-phone{
             display:block;
-            background-color: black;
+            text-align:center;
             position:sticky;
             top:0;
-            text-align:center;
-            ul{
-                display:grid;
-                grid-template-columns:auto auto auto;
-                padding:5px 0px;
-                a{
-                    font-size:16px;
-                    color:white;
-                    text-decoration:none;
-                    font-weight:bold;
+            .navbar{
+                background-color: black;
+                .offcanvas{
+                    background-color: black;
+                    .offcanvas-header{
+                        color:white;
+                        border-bottom: 2px solid white;
+                    }
+                    .offcanvas-body ul a{
+                        font-size:18px;
+                        color:white;
+                        font-weight:bold;
+                        padding:5px 0px;
+                    }
                 }
             }
         }
